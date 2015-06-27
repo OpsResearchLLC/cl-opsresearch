@@ -25,5 +25,7 @@
   :serial t
   :components ((:file "package")
                (:file "cl-opsresearch")
-               (:file "test")))
+               (:file "lisp/problem")
+               (:file "lisp/milp")
+               (:file "lisp/test")))
 

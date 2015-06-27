@@ -18,12 +18,10 @@
 ;;;; 
 ;;;; ;;;;; END LICENSE BLOCK ;;;;;
 
-(in-package #:or-glpk)
+(in-package #:cl-opsresearch)
 
-(defun test-glpk ()
-  (5am:explain! (5am:run 'test-glpk)))
+(defclass Problem ()())
 
-(5am:test test-glpk
-	(with-problem (problem :name "test-name" )
-      (5am:is (equal (name-of problem) "test-name"))
-	))
+(defgeneric release (problem))
+(defgeneric name-of (problem))
+

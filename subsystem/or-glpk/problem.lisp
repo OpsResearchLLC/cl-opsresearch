@@ -20,15 +20,17 @@
 
 (in-package #:or-glpk)
 
-(defclass Problem ()(
+(defclass Problem (or-milp:Problem)(
 	(glp-prob :reader glp-prob :initarg glp-prob :initform (glp::create-prob))))
 
 (defmethod initialize-instance :after ((p Problem) &key (name nil))
   (when name (glp:set-prob-name (glp-prob p) name )))
 
-(defgeneric glp-prob-delete (problem))
-(defmethod glp-prob-delete ((problem Problem))
+(defmethod release ((problem Problem))
 	(glp:delete-prob (glp-prob problem)))
+
+(defmethod name-of ((problem Problem))
+  (glp:get-prob-name (glp-prob problem)))
 
 (defmacro with-problem ((var &rest init-options) &body body)
     (let ((obj (gensym)))
@@ -38,4 +40,4 @@
                           ,var ,obj)
                     ,@body)
            (unless (null ,obj)
-             (glp-prob-delete ,obj))))))
+             (release ,obj))))))
