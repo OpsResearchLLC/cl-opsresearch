@@ -19,9 +19,9 @@
 ;;;; ;;;;; END LICENSE BLOCK ;;;;;
 
 (asdf:defsystem #:cl-opsresearch
-  :description "Describe cl-opsresearch here"
-  :author "Your Name <your.name@example.com>"
-  :license "Specify license here"
+  :description "Common Lisp library for Operations Research."
+  :author "Donald Anderson <dranderson@OpsResearch.com>"
+  :license "GPL3"
   :serial t
   :components ((:file "package")
                (:file "cl-opsresearch")))
