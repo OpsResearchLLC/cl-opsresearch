@@ -32,6 +32,23 @@
 (defmethod name-of ((problem Problem))
   (glp:get-prob-name (glp-prob problem)))
 
+(defmethod read-mps ((problem Problem) path &key format)
+  (if (eq format :fixed)
+    (glp:read-mps (glp-prob problem) glp:+MPS-DECK+ (cffi:null-pointer) (namestring path))
+    (glp:read-mps (glp-prob problem) glp:+MPS-FILE+ (cffi:null-pointer) (namestring path))))
+
+(defmethod write-mps ((problem Problem) path &key format)
+  (if (eq format :fixed)
+    (glp:write-mps (glp-prob problem) glp:+MPS-DECK+ (cffi:null-pointer) (namestring path))
+    (glp:write-mps (glp-prob problem) glp:+MPS-FILE+ (cffi:null-pointer) (namestring path))))
+
+(defmethod read-cplex-lp ((problem Problem) path)
+  (glp:read-lp (glp-prob problem) (cffi:null-pointer) (namestring path)))
+
+(defmethod write-cplex-lp ((problem Problem) path)
+  (glp:write-lp (glp-prob problem) (cffi:null-pointer) (namestring path)))
+
+
 (defmacro with-problem ((var &rest init-options) &body body)
     (let ((obj (gensym)))
       `(let (,var ,obj)

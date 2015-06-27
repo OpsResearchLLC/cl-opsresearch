@@ -22,4 +22,7 @@
 
 (defclass Problem (cl-opsresearch:Problem)())
 
-(defgeneric read-mls (problem))
+(defgeneric read-mps (problem path &key format))
+(defgeneric write-mps (problem path &key format))
+(defgeneric read-cplex-lp (problem path))
+(defgeneric write-cplex-lp (problem path))

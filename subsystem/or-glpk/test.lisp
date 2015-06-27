@@ -25,5 +25,15 @@
 
 (5am:test test-glpk
 	(with-problem (problem :name "test-name" )
-      (5am:is (equal (name-of problem) "test-name"))
-	))
+      	(5am:is (equal (name-of problem) "test-name"))
+
+		(read-mps problem (merge-pathnames
+			(make-pathname :directory '(:relative "data") :name "test-1" :type "mps")
+			(asdf:system-source-directory :or-glpk)
+			))
+		
+		(5am:is (equal (name-of problem) "TESTPROB"))		
+		(write-cplex-lp problem #p"/tmp/cplex.lp")
+
+		(with-problem (cplex-problem)
+			(read-cplex-lp cplex-problem #p"/tmp/cplex.lp"))))
