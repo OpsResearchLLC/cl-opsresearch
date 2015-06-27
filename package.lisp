@@ -19,5 +19,8 @@
 ;;;; ;;;;; END LICENSE BLOCK ;;;;;
 
 (defpackage #:cl-opsresearch
-  (:use #:cl))
+  (:use #:cl)
+  (:export
+  	#:test-all
+  	))
 

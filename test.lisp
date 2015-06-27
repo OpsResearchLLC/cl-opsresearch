@@ -1,4 +1,4 @@
-;;;; cl-opsresearch.asd
+;;;; test.lisp
 
 ;;;; ;;;;; BEGIN LICENSE BLOCK ;;;;;
 ;;;; 
@@ -18,12 +18,10 @@
 ;;;; 
 ;;;; ;;;;; END LICENSE BLOCK ;;;;;
 
-(asdf:defsystem #:cl-opsresearch
-  :description "Common Lisp library for Operations Research."
-  :author "Donald Anderson <dranderson@OpsResearch.com>"
-  :license "GPL3"
-  :serial t
-  :components ((:file "package")
-               (:file "cl-opsresearch")
-               (:file "test")))
+(in-package #:cl-opsresearch)
 
+(defun test-all ()
+	(ql:quickload 'or-glpk)
+	(ql:quickload 'or-gsl)
+	(eval '(or-glpk:test-all))
+	(eval '(or-gsl:test-all)))
