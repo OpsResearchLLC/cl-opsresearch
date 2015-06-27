@@ -23,5 +23,5 @@
 (defun test-all ()
 	(ql:quickload 'or-glpk)
 	(ql:quickload 'or-gsl)
-	(eval '(or-glpk:test-all))
-	(eval '(or-gsl:test-all)))
+	(eval (read-from-string "(or-glpk:test-all)"))
+	(eval (read-from-string "(or-gsl:test-all)")))
