@@ -21,7 +21,7 @@
 (defpackage #:or-gsl
   (:use #:cl)
   (:export
-     #:start #:test-all))
+     #:start #:test-gsl))
 
 (defpackage #:gsl
   (:use #:cl))

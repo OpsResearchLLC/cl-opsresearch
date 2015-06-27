@@ -22,7 +22,7 @@
   :description "Subsystem - GNU Linear Programming Kit."
   :author "Donald Anderson <dranderson@OpsResearch.com>"
   :license "GPL3"  
-  :depends-on (#:cffi #:fiveam)
+  :depends-on (#:cl-opsresearch #:cffi #:fiveam)
   :serial t
   :components ((:file "package")
                (:file "swig/glpk")

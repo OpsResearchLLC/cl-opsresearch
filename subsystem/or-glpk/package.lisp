@@ -20,7 +20,7 @@
 
 (defpackage #:or-glpk
   (:use #:cl)
-  (:export #:start #:test-all #:problem-native-problem #:with-problem))
+  (:export #:start #:test-glpk #:problem-native-problem #:with-problem))
 
 (defpackage #:glp
   (:use #:cl))

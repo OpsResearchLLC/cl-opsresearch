@@ -20,8 +20,8 @@
 
 (in-package #:or-gsl)
 
-(defun test-all ()
-  (5am:explain! (5am:run 'test-all)))
+(defun test-gsl ()
+  (5am:explain! (5am:run 'test-gsl)))
 
-(5am:test test-all
+(5am:test test-gsl
       (5am:is ( equal T T)))

@@ -20,10 +20,10 @@
 
 (in-package #:or-glpk)
 
-(defun test-all ()
-  (5am:explain! (5am:run 'test-all)))
+(defun test-glpk ()
+  (5am:explain! (5am:run 'test-glpk)))
 
-(5am:test test-all
+(5am:test test-glpk
 
 	(with-problem (problem :name "test-name" )
       (5am:is ( equal (glp:get-prob-name (glp-prob problem)) "test-name"))

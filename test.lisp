@@ -20,8 +20,8 @@
 
 (in-package #:cl-opsresearch)
 
-(defun test-all ()
+(defun test-opsresearch ()
 	(ql:quickload 'or-glpk)
 	(ql:quickload 'or-gsl)
-	(eval (read-from-string "(or-glpk:test-all)"))
-	(eval (read-from-string "(or-gsl:test-all)")))
+	(eval (read-from-string "(or-glpk:test-glpk)"))
+	(eval (read-from-string "(or-gsl:test-gsl)")))

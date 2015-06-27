@@ -21,6 +21,6 @@
 (defpackage #:cl-opsresearch
   (:use #:cl)
   (:export
-  	#:test-all
+  	#:test-opsresearch
   	))
 
