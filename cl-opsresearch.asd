@@ -22,6 +22,7 @@
   :description "Common Lisp library for Operations Research."
   :author "Donald Anderson <dranderson@OpsResearch.com>"
   :license "GPL3"
+  :depends-on( #:quicklisp )
   :serial t
   :components ((:file "package")
                (:file "cl-opsresearch")
