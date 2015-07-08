@@ -21,7 +21,9 @@
 (in-package #:cl-opsresearch)
 
 (defun test-opsresearch ()
-	(ql:quickload 'or-glpk)
-	(ql:quickload 'or-gsl)
+	"Run unit tests for cl-opsresearch and subsystems. This function requires that quicklisp is installed to load subsystems."
+ 	(unless (member :quicklisp *features*) (load #P"~/quicklisp/setup.lisp"))
+	(eval (read-from-string "(ql:quickload 'or-glpk)"))
+	(eval (read-from-string "(ql:quickload 'or-gsl)"))
 	(eval (read-from-string "(or-glpk:test-glpk)"))
 	(eval (read-from-string "(or-gsl:test-gsl)")))
