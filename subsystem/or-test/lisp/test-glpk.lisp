@@ -36,4 +36,4 @@
 		(or-glpk:write-cplex-lp problem #p"/tmp/cplex.lp")
 
 		(or-glpk:with-problem (cplex-problem)
-			(read-cplex-lp cplex-problem #p"/tmp/cplex.lp"))))
+			(or-glpk:read-cplex-lp cplex-problem #p"/tmp/cplex.lp"))))
