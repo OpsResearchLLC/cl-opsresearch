@@ -21,7 +21,6 @@
 (defpackage #:cl-opsresearch
   (:use #:cl)
   (:export
-  	#:test-opsresearch
   	#:Problem
   	#:release
     #:name-of

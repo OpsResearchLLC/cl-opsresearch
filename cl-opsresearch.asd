@@ -26,6 +26,5 @@
   :components ((:file "package")
                (:file "cl-opsresearch")
                (:file "lisp/problem")
-               (:file "lisp/milp")
-               (:file "lisp/test")))
+               (:file "lisp/milp")))
 
