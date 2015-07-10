@@ -21,32 +21,32 @@
 (in-package #:or-glpk)
 
 (defclass Problem (or-milp:Problem)(
-	(glp-prob :reader glp-prob :initarg glp-prob :initform (glp::create-prob))))
+	(glp-prob :reader glp-prob :initarg glp-prob :initform (glp:glp-create-prob))))
 
 (defmethod initialize-instance :after ((p Problem) &key (name nil))
-  (when name (glp:set-prob-name (glp-prob p) name )))
+  (when name (glp:glp-set-prob-name (glp-prob p) name )))
 
 (defmethod release ((problem Problem))
-	(glp:delete-prob (glp-prob problem)))
+	(glp:glp-delete-prob (glp-prob problem)))
 
 (defmethod name-of ((problem Problem))
-  (glp:get-prob-name (glp-prob problem)))
+  (glp:glp-get-prob-name (glp-prob problem)))
 
 (defmethod read-mps ((problem Problem) path &key format)
   (if (eq format :fixed)
-    (glp:read-mps (glp-prob problem) glp:+MPS-DECK+ (cffi:null-pointer) (namestring path))
-    (glp:read-mps (glp-prob problem) glp:+MPS-FILE+ (cffi:null-pointer) (namestring path))))
+    (glp:glp-read-mps (glp-prob problem) glp:+GLP-MPS-DECK+ (cffi:null-pointer) (namestring path))
+    (glp:glp-read-mps (glp-prob problem) glp:+GLP-MPS-FILE+ (cffi:null-pointer) (namestring path))))
 
 (defmethod write-mps ((problem Problem) path &key format)
   (if (eq format :fixed)
-    (glp:write-mps (glp-prob problem) glp:+MPS-DECK+ (cffi:null-pointer) (namestring path))
-    (glp:write-mps (glp-prob problem) glp:+MPS-FILE+ (cffi:null-pointer) (namestring path))))
+    (glp:glp-write-mps (glp-prob problem) glp:+GLP-MPS-DECK+ (cffi:null-pointer) (namestring path))
+    (glp:glp-write-mps (glp-prob problem) glp:+GLP-MPS-FILE+ (cffi:null-pointer) (namestring path))))
 
 (defmethod read-cplex-lp ((problem Problem) path)
-  (glp:read-lp (glp-prob problem) (cffi:null-pointer) (namestring path)))
+  (glp:glp-read-lp (glp-prob problem) (cffi:null-pointer) (namestring path)))
 
 (defmethod write-cplex-lp ((problem Problem) path)
-  (glp:write-lp (glp-prob problem) (cffi:null-pointer) (namestring path)))
+  (glp:glp-write-lp (glp-prob problem) (cffi:null-pointer) (namestring path)))
 
 
 (defmacro with-problem ((var &rest init-options) &body body)

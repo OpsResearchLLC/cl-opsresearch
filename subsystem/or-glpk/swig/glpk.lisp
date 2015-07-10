@@ -54,135 +54,135 @@
 ;;;SWIG wrapper code ends here
 
 
-(cl:defconstant #.(swig-lispify "MAJOR_VERSION" 'constant) 4)
+(cl:defconstant #.(swig-lispify "GLP_MAJOR_VERSION" 'constant) 4)
 
-(cl:export '#.(swig-lispify "MAJOR_VERSION" 'constant))
+(cl:export '#.(swig-lispify "GLP_MAJOR_VERSION" 'constant))
 
-(cl:defconstant #.(swig-lispify "MINOR_VERSION" 'constant) 52)
+(cl:defconstant #.(swig-lispify "GLP_MINOR_VERSION" 'constant) 52)
 
-(cl:export '#.(swig-lispify "MINOR_VERSION" 'constant))
+(cl:export '#.(swig-lispify "GLP_MINOR_VERSION" 'constant))
 
-(cffi:defctype #.(swig-lispify "prob" 'typename) :pointer)
+(cffi:defctype #.(swig-lispify "glp_prob" 'typename) :pointer)
 
-(cl:export '#.(swig-lispify "prob" 'typename))
+(cl:export '#.(swig-lispify "glp_prob" 'typename))
 
-(cl:defconstant #.(swig-lispify "MIN" 'constant) 1)
+(cl:defconstant #.(swig-lispify "GLP_MIN" 'constant) 1)
 
-(cl:export '#.(swig-lispify "MIN" 'constant))
+(cl:export '#.(swig-lispify "GLP_MIN" 'constant))
 
-(cl:defconstant #.(swig-lispify "MAX" 'constant) 2)
+(cl:defconstant #.(swig-lispify "GLP_MAX" 'constant) 2)
 
-(cl:export '#.(swig-lispify "MAX" 'constant))
+(cl:export '#.(swig-lispify "GLP_MAX" 'constant))
 
-(cl:defconstant #.(swig-lispify "CV" 'constant) 1)
+(cl:defconstant #.(swig-lispify "GLP_CV" 'constant) 1)
 
-(cl:export '#.(swig-lispify "CV" 'constant))
+(cl:export '#.(swig-lispify "GLP_CV" 'constant))
 
-(cl:defconstant #.(swig-lispify "IV" 'constant) 2)
+(cl:defconstant #.(swig-lispify "GLP_IV" 'constant) 2)
 
-(cl:export '#.(swig-lispify "IV" 'constant))
+(cl:export '#.(swig-lispify "GLP_IV" 'constant))
 
-(cl:defconstant #.(swig-lispify "BV" 'constant) 3)
+(cl:defconstant #.(swig-lispify "GLP_BV" 'constant) 3)
 
-(cl:export '#.(swig-lispify "BV" 'constant))
+(cl:export '#.(swig-lispify "GLP_BV" 'constant))
 
-(cl:defconstant #.(swig-lispify "FR" 'constant) 1)
+(cl:defconstant #.(swig-lispify "GLP_FR" 'constant) 1)
 
-(cl:export '#.(swig-lispify "FR" 'constant))
+(cl:export '#.(swig-lispify "GLP_FR" 'constant))
 
-(cl:defconstant #.(swig-lispify "LO" 'constant) 2)
+(cl:defconstant #.(swig-lispify "GLP_LO" 'constant) 2)
 
-(cl:export '#.(swig-lispify "LO" 'constant))
+(cl:export '#.(swig-lispify "GLP_LO" 'constant))
 
-(cl:defconstant #.(swig-lispify "UP" 'constant) 3)
+(cl:defconstant #.(swig-lispify "GLP_UP" 'constant) 3)
 
-(cl:export '#.(swig-lispify "UP" 'constant))
+(cl:export '#.(swig-lispify "GLP_UP" 'constant))
 
-(cl:defconstant #.(swig-lispify "DB" 'constant) 4)
+(cl:defconstant #.(swig-lispify "GLP_DB" 'constant) 4)
 
-(cl:export '#.(swig-lispify "DB" 'constant))
+(cl:export '#.(swig-lispify "GLP_DB" 'constant))
 
-(cl:defconstant #.(swig-lispify "FX" 'constant) 5)
+(cl:defconstant #.(swig-lispify "GLP_FX" 'constant) 5)
 
-(cl:export '#.(swig-lispify "FX" 'constant))
+(cl:export '#.(swig-lispify "GLP_FX" 'constant))
 
-(cl:defconstant #.(swig-lispify "BS" 'constant) 1)
+(cl:defconstant #.(swig-lispify "GLP_BS" 'constant) 1)
 
-(cl:export '#.(swig-lispify "BS" 'constant))
+(cl:export '#.(swig-lispify "GLP_BS" 'constant))
 
-(cl:defconstant #.(swig-lispify "NL" 'constant) 2)
+(cl:defconstant #.(swig-lispify "GLP_NL" 'constant) 2)
 
-(cl:export '#.(swig-lispify "NL" 'constant))
+(cl:export '#.(swig-lispify "GLP_NL" 'constant))
 
-(cl:defconstant #.(swig-lispify "NU" 'constant) 3)
+(cl:defconstant #.(swig-lispify "GLP_NU" 'constant) 3)
 
-(cl:export '#.(swig-lispify "NU" 'constant))
+(cl:export '#.(swig-lispify "GLP_NU" 'constant))
 
-(cl:defconstant #.(swig-lispify "NF" 'constant) 4)
+(cl:defconstant #.(swig-lispify "GLP_NF" 'constant) 4)
 
-(cl:export '#.(swig-lispify "NF" 'constant))
+(cl:export '#.(swig-lispify "GLP_NF" 'constant))
 
-(cl:defconstant #.(swig-lispify "NS" 'constant) 5)
+(cl:defconstant #.(swig-lispify "GLP_NS" 'constant) 5)
 
-(cl:export '#.(swig-lispify "NS" 'constant))
+(cl:export '#.(swig-lispify "GLP_NS" 'constant))
 
-(cl:defconstant #.(swig-lispify "SF_GM" 'constant) #x01)
+(cl:defconstant #.(swig-lispify "GLP_SF_GM" 'constant) #x01)
 
-(cl:export '#.(swig-lispify "SF_GM" 'constant))
+(cl:export '#.(swig-lispify "GLP_SF_GM" 'constant))
 
-(cl:defconstant #.(swig-lispify "SF_EQ" 'constant) #x10)
+(cl:defconstant #.(swig-lispify "GLP_SF_EQ" 'constant) #x10)
 
-(cl:export '#.(swig-lispify "SF_EQ" 'constant))
+(cl:export '#.(swig-lispify "GLP_SF_EQ" 'constant))
 
-(cl:defconstant #.(swig-lispify "SF_2N" 'constant) #x20)
+(cl:defconstant #.(swig-lispify "GLP_SF_2N" 'constant) #x20)
 
-(cl:export '#.(swig-lispify "SF_2N" 'constant))
+(cl:export '#.(swig-lispify "GLP_SF_2N" 'constant))
 
-(cl:defconstant #.(swig-lispify "SF_SKIP" 'constant) #x40)
+(cl:defconstant #.(swig-lispify "GLP_SF_SKIP" 'constant) #x40)
 
-(cl:export '#.(swig-lispify "SF_SKIP" 'constant))
+(cl:export '#.(swig-lispify "GLP_SF_SKIP" 'constant))
 
-(cl:defconstant #.(swig-lispify "SF_AUTO" 'constant) #x80)
+(cl:defconstant #.(swig-lispify "GLP_SF_AUTO" 'constant) #x80)
 
-(cl:export '#.(swig-lispify "SF_AUTO" 'constant))
+(cl:export '#.(swig-lispify "GLP_SF_AUTO" 'constant))
 
-(cl:defconstant #.(swig-lispify "SOL" 'constant) 1)
+(cl:defconstant #.(swig-lispify "GLP_SOL" 'constant) 1)
 
-(cl:export '#.(swig-lispify "SOL" 'constant))
+(cl:export '#.(swig-lispify "GLP_SOL" 'constant))
 
-(cl:defconstant #.(swig-lispify "IPT" 'constant) 2)
+(cl:defconstant #.(swig-lispify "GLP_IPT" 'constant) 2)
 
-(cl:export '#.(swig-lispify "IPT" 'constant))
+(cl:export '#.(swig-lispify "GLP_IPT" 'constant))
 
-(cl:defconstant #.(swig-lispify "MIP" 'constant) 3)
+(cl:defconstant #.(swig-lispify "GLP_MIP" 'constant) 3)
 
-(cl:export '#.(swig-lispify "MIP" 'constant))
+(cl:export '#.(swig-lispify "GLP_MIP" 'constant))
 
-(cl:defconstant #.(swig-lispify "UNDEF" 'constant) 1)
+(cl:defconstant #.(swig-lispify "GLP_UNDEF" 'constant) 1)
 
-(cl:export '#.(swig-lispify "UNDEF" 'constant))
+(cl:export '#.(swig-lispify "GLP_UNDEF" 'constant))
 
-(cl:defconstant #.(swig-lispify "FEAS" 'constant) 2)
+(cl:defconstant #.(swig-lispify "GLP_FEAS" 'constant) 2)
 
-(cl:export '#.(swig-lispify "FEAS" 'constant))
+(cl:export '#.(swig-lispify "GLP_FEAS" 'constant))
 
-(cl:defconstant #.(swig-lispify "INFEAS" 'constant) 3)
+(cl:defconstant #.(swig-lispify "GLP_INFEAS" 'constant) 3)
 
-(cl:export '#.(swig-lispify "INFEAS" 'constant))
+(cl:export '#.(swig-lispify "GLP_INFEAS" 'constant))
 
-(cl:defconstant #.(swig-lispify "NOFEAS" 'constant) 4)
+(cl:defconstant #.(swig-lispify "GLP_NOFEAS" 'constant) 4)
 
-(cl:export '#.(swig-lispify "NOFEAS" 'constant))
+(cl:export '#.(swig-lispify "GLP_NOFEAS" 'constant))
 
-(cl:defconstant #.(swig-lispify "OPT" 'constant) 5)
+(cl:defconstant #.(swig-lispify "GLP_OPT" 'constant) 5)
 
-(cl:export '#.(swig-lispify "OPT" 'constant))
+(cl:export '#.(swig-lispify "GLP_OPT" 'constant))
 
-(cl:defconstant #.(swig-lispify "UNBND" 'constant) 6)
+(cl:defconstant #.(swig-lispify "GLP_UNBND" 'constant) 6)
 
-(cl:export '#.(swig-lispify "UNBND" 'constant))
+(cl:export '#.(swig-lispify "GLP_UNBND" 'constant))
 
-(cffi:defcstruct #.(swig-lispify "bfcp" 'classname)
+(cffi:defcstruct #.(swig-lispify "glp_bfcp" 'classname)
 	(#.(swig-lispify "msg_lev" 'slotname) :int)
 	(#.(swig-lispify "type" 'slotname) :int)
 	(#.(swig-lispify "lu_size" 'slotname) :int)
@@ -197,7 +197,7 @@
 	(#.(swig-lispify "rs_size" 'slotname) :int)
 	(#.(swig-lispify "foo_bar" 'slotname) :pointer))
 
-(cl:export '#.(swig-lispify "bfcp" 'classname))
+(cl:export '#.(swig-lispify "glp_bfcp" 'classname))
 
 (cl:export '#.(swig-lispify "msg_lev" 'slotname))
 
@@ -225,11 +225,11 @@
 
 (cl:export '#.(swig-lispify "foo_bar" 'slotname))
 
-(cffi:defctype #.(swig-lispify "bfcp" 'typename) #.(swig-lispify "bfcp" 'classname))
+(cffi:defctype #.(swig-lispify "glp_bfcp" 'typename) #.(swig-lispify "glp_bfcp" 'classname))
 
-(cl:export '#.(swig-lispify "bfcp" 'typename))
+(cl:export '#.(swig-lispify "glp_bfcp" 'typename))
 
-(cffi:defcstruct #.(swig-lispify "smcp" 'classname)
+(cffi:defcstruct #.(swig-lispify "glp_smcp" 'classname)
 	(#.(swig-lispify "msg_lev" 'slotname) :int)
 	(#.(swig-lispify "meth" 'slotname) :int)
 	(#.(swig-lispify "pricing" 'slotname) :int)
@@ -246,7 +246,7 @@
 	(#.(swig-lispify "presolve" 'slotname) :int)
 	(#.(swig-lispify "foo_bar" 'slotname) :pointer))
 
-(cl:export '#.(swig-lispify "smcp" 'classname))
+(cl:export '#.(swig-lispify "glp_smcp" 'classname))
 
 (cl:export '#.(swig-lispify "msg_lev" 'slotname))
 
@@ -278,16 +278,16 @@
 
 (cl:export '#.(swig-lispify "foo_bar" 'slotname))
 
-(cffi:defctype #.(swig-lispify "smcp" 'typename) #.(swig-lispify "smcp" 'classname))
+(cffi:defctype #.(swig-lispify "glp_smcp" 'typename) #.(swig-lispify "glp_smcp" 'classname))
 
-(cl:export '#.(swig-lispify "smcp" 'typename))
+(cl:export '#.(swig-lispify "glp_smcp" 'typename))
 
-(cffi:defcstruct #.(swig-lispify "iptcp" 'classname)
+(cffi:defcstruct #.(swig-lispify "glp_iptcp" 'classname)
 	(#.(swig-lispify "msg_lev" 'slotname) :int)
 	(#.(swig-lispify "ord_alg" 'slotname) :int)
 	(#.(swig-lispify "foo_bar" 'slotname) :pointer))
 
-(cl:export '#.(swig-lispify "iptcp" 'classname))
+(cl:export '#.(swig-lispify "glp_iptcp" 'classname))
 
 (cl:export '#.(swig-lispify "msg_lev" 'slotname))
 
@@ -295,15 +295,15 @@
 
 (cl:export '#.(swig-lispify "foo_bar" 'slotname))
 
-(cffi:defctype #.(swig-lispify "iptcp" 'typename) #.(swig-lispify "iptcp" 'classname))
+(cffi:defctype #.(swig-lispify "glp_iptcp" 'typename) #.(swig-lispify "glp_iptcp" 'classname))
 
-(cl:export '#.(swig-lispify "iptcp" 'typename))
+(cl:export '#.(swig-lispify "glp_iptcp" 'typename))
 
-(cffi:defctype #.(swig-lispify "tree" 'typename) :pointer)
+(cffi:defctype #.(swig-lispify "glp_tree" 'typename) :pointer)
 
-(cl:export '#.(swig-lispify "tree" 'typename))
+(cl:export '#.(swig-lispify "glp_tree" 'typename))
 
-(cffi:defcstruct #.(swig-lispify "iocp" 'classname)
+(cffi:defcstruct #.(swig-lispify "glp_iocp" 'classname)
 	(#.(swig-lispify "msg_lev" 'slotname) :int)
 	(#.(swig-lispify "br_tech" 'slotname) :int)
 	(#.(swig-lispify "bt_tech" 'slotname) :int)
@@ -331,7 +331,7 @@
 	(#.(swig-lispify "alien" 'slotname) :int)
 	(#.(swig-lispify "foo_bar" 'slotname) :pointer))
 
-(cl:export '#.(swig-lispify "iocp" 'classname))
+(cl:export '#.(swig-lispify "glp_iocp" 'classname))
 
 (cl:export '#.(swig-lispify "msg_lev" 'slotname))
 
@@ -385,17 +385,17 @@
 
 (cl:export '#.(swig-lispify "foo_bar" 'slotname))
 
-(cffi:defctype #.(swig-lispify "iocp" 'typename) #.(swig-lispify "iocp" 'classname))
+(cffi:defctype #.(swig-lispify "glp_iocp" 'typename) #.(swig-lispify "glp_iocp" 'classname))
 
-(cl:export '#.(swig-lispify "iocp" 'typename))
+(cl:export '#.(swig-lispify "glp_iocp" 'typename))
 
-(cffi:defcstruct #.(swig-lispify "attr" 'classname)
+(cffi:defcstruct #.(swig-lispify "glp_attr" 'classname)
 	(#.(swig-lispify "level" 'slotname) :int)
 	(#.(swig-lispify "origin" 'slotname) :int)
 	(#.(swig-lispify "klass" 'slotname) :int)
 	(#.(swig-lispify "foo_bar" 'slotname) :pointer))
 
-(cl:export '#.(swig-lispify "attr" 'classname))
+(cl:export '#.(swig-lispify "glp_attr" 'classname))
 
 (cl:export '#.(swig-lispify "level" 'slotname))
 
@@ -405,169 +405,169 @@
 
 (cl:export '#.(swig-lispify "foo_bar" 'slotname))
 
-(cffi:defctype #.(swig-lispify "attr" 'typename) #.(swig-lispify "attr" 'classname))
+(cffi:defctype #.(swig-lispify "glp_attr" 'typename) #.(swig-lispify "glp_attr" 'classname))
 
-(cl:export '#.(swig-lispify "attr" 'typename))
+(cl:export '#.(swig-lispify "glp_attr" 'typename))
 
-(cl:defconstant #.(swig-lispify "ON" 'constant) 1)
+(cl:defconstant #.(swig-lispify "GLP_ON" 'constant) 1)
 
-(cl:export '#.(swig-lispify "ON" 'constant))
+(cl:export '#.(swig-lispify "GLP_ON" 'constant))
 
-(cl:defconstant #.(swig-lispify "OFF" 'constant) 0)
+(cl:defconstant #.(swig-lispify "GLP_OFF" 'constant) 0)
 
-(cl:export '#.(swig-lispify "OFF" 'constant))
+(cl:export '#.(swig-lispify "GLP_OFF" 'constant))
 
-(cl:defconstant #.(swig-lispify "IROWGEN" 'constant) #x01)
+(cl:defconstant #.(swig-lispify "GLP_IROWGEN" 'constant) #x01)
 
-(cl:export '#.(swig-lispify "IROWGEN" 'constant))
+(cl:export '#.(swig-lispify "GLP_IROWGEN" 'constant))
 
-(cl:defconstant #.(swig-lispify "IBINGO" 'constant) #x02)
+(cl:defconstant #.(swig-lispify "GLP_IBINGO" 'constant) #x02)
 
-(cl:export '#.(swig-lispify "IBINGO" 'constant))
+(cl:export '#.(swig-lispify "GLP_IBINGO" 'constant))
 
-(cl:defconstant #.(swig-lispify "IHEUR" 'constant) #x03)
+(cl:defconstant #.(swig-lispify "GLP_IHEUR" 'constant) #x03)
 
-(cl:export '#.(swig-lispify "IHEUR" 'constant))
+(cl:export '#.(swig-lispify "GLP_IHEUR" 'constant))
 
-(cl:defconstant #.(swig-lispify "ICUTGEN" 'constant) #x04)
+(cl:defconstant #.(swig-lispify "GLP_ICUTGEN" 'constant) #x04)
 
-(cl:export '#.(swig-lispify "ICUTGEN" 'constant))
+(cl:export '#.(swig-lispify "GLP_ICUTGEN" 'constant))
 
-(cl:defconstant #.(swig-lispify "IBRANCH" 'constant) #x05)
+(cl:defconstant #.(swig-lispify "GLP_IBRANCH" 'constant) #x05)
 
-(cl:export '#.(swig-lispify "IBRANCH" 'constant))
+(cl:export '#.(swig-lispify "GLP_IBRANCH" 'constant))
 
-(cl:defconstant #.(swig-lispify "ISELECT" 'constant) #x06)
+(cl:defconstant #.(swig-lispify "GLP_ISELECT" 'constant) #x06)
 
-(cl:export '#.(swig-lispify "ISELECT" 'constant))
+(cl:export '#.(swig-lispify "GLP_ISELECT" 'constant))
 
-(cl:defconstant #.(swig-lispify "IPREPRO" 'constant) #x07)
+(cl:defconstant #.(swig-lispify "GLP_IPREPRO" 'constant) #x07)
 
-(cl:export '#.(swig-lispify "IPREPRO" 'constant))
+(cl:export '#.(swig-lispify "GLP_IPREPRO" 'constant))
 
-(cl:defconstant #.(swig-lispify "NO_BRNCH" 'constant) 0)
+(cl:defconstant #.(swig-lispify "GLP_NO_BRNCH" 'constant) 0)
 
-(cl:export '#.(swig-lispify "NO_BRNCH" 'constant))
+(cl:export '#.(swig-lispify "GLP_NO_BRNCH" 'constant))
 
-(cl:defconstant #.(swig-lispify "DN_BRNCH" 'constant) 1)
+(cl:defconstant #.(swig-lispify "GLP_DN_BRNCH" 'constant) 1)
 
-(cl:export '#.(swig-lispify "DN_BRNCH" 'constant))
+(cl:export '#.(swig-lispify "GLP_DN_BRNCH" 'constant))
 
-(cl:defconstant #.(swig-lispify "UP_BRNCH" 'constant) 2)
+(cl:defconstant #.(swig-lispify "GLP_UP_BRNCH" 'constant) 2)
 
-(cl:export '#.(swig-lispify "UP_BRNCH" 'constant))
+(cl:export '#.(swig-lispify "GLP_UP_BRNCH" 'constant))
 
-(cl:defconstant #.(swig-lispify "EBADB" 'constant) #x01)
+(cl:defconstant #.(swig-lispify "GLP_EBADB" 'constant) #x01)
 
-(cl:export '#.(swig-lispify "EBADB" 'constant))
+(cl:export '#.(swig-lispify "GLP_EBADB" 'constant))
 
-(cl:defconstant #.(swig-lispify "ESING" 'constant) #x02)
+(cl:defconstant #.(swig-lispify "GLP_ESING" 'constant) #x02)
 
-(cl:export '#.(swig-lispify "ESING" 'constant))
+(cl:export '#.(swig-lispify "GLP_ESING" 'constant))
 
-(cl:defconstant #.(swig-lispify "ECOND" 'constant) #x03)
+(cl:defconstant #.(swig-lispify "GLP_ECOND" 'constant) #x03)
 
-(cl:export '#.(swig-lispify "ECOND" 'constant))
+(cl:export '#.(swig-lispify "GLP_ECOND" 'constant))
 
-(cl:defconstant #.(swig-lispify "EBOUND" 'constant) #x04)
+(cl:defconstant #.(swig-lispify "GLP_EBOUND" 'constant) #x04)
 
-(cl:export '#.(swig-lispify "EBOUND" 'constant))
+(cl:export '#.(swig-lispify "GLP_EBOUND" 'constant))
 
-(cl:defconstant #.(swig-lispify "EFAIL" 'constant) #x05)
+(cl:defconstant #.(swig-lispify "GLP_EFAIL" 'constant) #x05)
 
-(cl:export '#.(swig-lispify "EFAIL" 'constant))
+(cl:export '#.(swig-lispify "GLP_EFAIL" 'constant))
 
-(cl:defconstant #.(swig-lispify "EOBJLL" 'constant) #x06)
+(cl:defconstant #.(swig-lispify "GLP_EOBJLL" 'constant) #x06)
 
-(cl:export '#.(swig-lispify "EOBJLL" 'constant))
+(cl:export '#.(swig-lispify "GLP_EOBJLL" 'constant))
 
-(cl:defconstant #.(swig-lispify "EOBJUL" 'constant) #x07)
+(cl:defconstant #.(swig-lispify "GLP_EOBJUL" 'constant) #x07)
 
-(cl:export '#.(swig-lispify "EOBJUL" 'constant))
+(cl:export '#.(swig-lispify "GLP_EOBJUL" 'constant))
 
-(cl:defconstant #.(swig-lispify "EITLIM" 'constant) #x08)
+(cl:defconstant #.(swig-lispify "GLP_EITLIM" 'constant) #x08)
 
-(cl:export '#.(swig-lispify "EITLIM" 'constant))
+(cl:export '#.(swig-lispify "GLP_EITLIM" 'constant))
 
-(cl:defconstant #.(swig-lispify "ETMLIM" 'constant) #x09)
+(cl:defconstant #.(swig-lispify "GLP_ETMLIM" 'constant) #x09)
 
-(cl:export '#.(swig-lispify "ETMLIM" 'constant))
+(cl:export '#.(swig-lispify "GLP_ETMLIM" 'constant))
 
-(cl:defconstant #.(swig-lispify "ENOPFS" 'constant) #x0A)
+(cl:defconstant #.(swig-lispify "GLP_ENOPFS" 'constant) #x0A)
 
-(cl:export '#.(swig-lispify "ENOPFS" 'constant))
+(cl:export '#.(swig-lispify "GLP_ENOPFS" 'constant))
 
-(cl:defconstant #.(swig-lispify "ENODFS" 'constant) #x0B)
+(cl:defconstant #.(swig-lispify "GLP_ENODFS" 'constant) #x0B)
 
-(cl:export '#.(swig-lispify "ENODFS" 'constant))
+(cl:export '#.(swig-lispify "GLP_ENODFS" 'constant))
 
-(cl:defconstant #.(swig-lispify "EROOT" 'constant) #x0C)
+(cl:defconstant #.(swig-lispify "GLP_EROOT" 'constant) #x0C)
 
-(cl:export '#.(swig-lispify "EROOT" 'constant))
+(cl:export '#.(swig-lispify "GLP_EROOT" 'constant))
 
-(cl:defconstant #.(swig-lispify "ESTOP" 'constant) #x0D)
+(cl:defconstant #.(swig-lispify "GLP_ESTOP" 'constant) #x0D)
 
-(cl:export '#.(swig-lispify "ESTOP" 'constant))
+(cl:export '#.(swig-lispify "GLP_ESTOP" 'constant))
 
-(cl:defconstant #.(swig-lispify "EMIPGAP" 'constant) #x0E)
+(cl:defconstant #.(swig-lispify "GLP_EMIPGAP" 'constant) #x0E)
 
-(cl:export '#.(swig-lispify "EMIPGAP" 'constant))
+(cl:export '#.(swig-lispify "GLP_EMIPGAP" 'constant))
 
-(cl:defconstant #.(swig-lispify "ENOFEAS" 'constant) #x0F)
+(cl:defconstant #.(swig-lispify "GLP_ENOFEAS" 'constant) #x0F)
 
-(cl:export '#.(swig-lispify "ENOFEAS" 'constant))
+(cl:export '#.(swig-lispify "GLP_ENOFEAS" 'constant))
 
-(cl:defconstant #.(swig-lispify "ENOCVG" 'constant) #x10)
+(cl:defconstant #.(swig-lispify "GLP_ENOCVG" 'constant) #x10)
 
-(cl:export '#.(swig-lispify "ENOCVG" 'constant))
+(cl:export '#.(swig-lispify "GLP_ENOCVG" 'constant))
 
-(cl:defconstant #.(swig-lispify "EINSTAB" 'constant) #x11)
+(cl:defconstant #.(swig-lispify "GLP_EINSTAB" 'constant) #x11)
 
-(cl:export '#.(swig-lispify "EINSTAB" 'constant))
+(cl:export '#.(swig-lispify "GLP_EINSTAB" 'constant))
 
-(cl:defconstant #.(swig-lispify "EDATA" 'constant) #x12)
+(cl:defconstant #.(swig-lispify "GLP_EDATA" 'constant) #x12)
 
-(cl:export '#.(swig-lispify "EDATA" 'constant))
+(cl:export '#.(swig-lispify "GLP_EDATA" 'constant))
 
-(cl:defconstant #.(swig-lispify "ERANGE" 'constant) #x13)
+(cl:defconstant #.(swig-lispify "GLP_ERANGE" 'constant) #x13)
 
-(cl:export '#.(swig-lispify "ERANGE" 'constant))
+(cl:export '#.(swig-lispify "GLP_ERANGE" 'constant))
 
-(cl:defconstant #.(swig-lispify "KKT_PE" 'constant) 1)
+(cl:defconstant #.(swig-lispify "GLP_KKT_PE" 'constant) 1)
 
-(cl:export '#.(swig-lispify "KKT_PE" 'constant))
+(cl:export '#.(swig-lispify "GLP_KKT_PE" 'constant))
 
-(cl:defconstant #.(swig-lispify "KKT_PB" 'constant) 2)
+(cl:defconstant #.(swig-lispify "GLP_KKT_PB" 'constant) 2)
 
-(cl:export '#.(swig-lispify "KKT_PB" 'constant))
+(cl:export '#.(swig-lispify "GLP_KKT_PB" 'constant))
 
-(cl:defconstant #.(swig-lispify "KKT_DE" 'constant) 3)
+(cl:defconstant #.(swig-lispify "GLP_KKT_DE" 'constant) 3)
 
-(cl:export '#.(swig-lispify "KKT_DE" 'constant))
+(cl:export '#.(swig-lispify "GLP_KKT_DE" 'constant))
 
-(cl:defconstant #.(swig-lispify "KKT_DB" 'constant) 4)
+(cl:defconstant #.(swig-lispify "GLP_KKT_DB" 'constant) 4)
 
-(cl:export '#.(swig-lispify "KKT_DB" 'constant))
+(cl:export '#.(swig-lispify "GLP_KKT_DB" 'constant))
 
-(cl:defconstant #.(swig-lispify "KKT_CS" 'constant) 5)
+(cl:defconstant #.(swig-lispify "GLP_KKT_CS" 'constant) 5)
 
-(cl:export '#.(swig-lispify "KKT_CS" 'constant))
+(cl:export '#.(swig-lispify "GLP_KKT_CS" 'constant))
 
-(cl:defconstant #.(swig-lispify "MPS_DECK" 'constant) 1)
+(cl:defconstant #.(swig-lispify "GLP_MPS_DECK" 'constant) 1)
 
-(cl:export '#.(swig-lispify "MPS_DECK" 'constant))
+(cl:export '#.(swig-lispify "GLP_MPS_DECK" 'constant))
 
-(cl:defconstant #.(swig-lispify "MPS_FILE" 'constant) 2)
+(cl:defconstant #.(swig-lispify "GLP_MPS_FILE" 'constant) 2)
 
-(cl:export '#.(swig-lispify "MPS_FILE" 'constant))
+(cl:export '#.(swig-lispify "GLP_MPS_FILE" 'constant))
 
-(cffi:defcstruct #.(swig-lispify "mpscp" 'classname)
+(cffi:defcstruct #.(swig-lispify "glp_mpscp" 'classname)
 	(#.(swig-lispify "blank" 'slotname) :int)
 	(#.(swig-lispify "obj_name" 'slotname) :string)
 	(#.(swig-lispify "tol_mps" 'slotname) :double)
 	(#.(swig-lispify "foo_bar" 'slotname) :pointer))
 
-(cl:export '#.(swig-lispify "mpscp" 'classname))
+(cl:export '#.(swig-lispify "glp_mpscp" 'classname))
 
 (cl:export '#.(swig-lispify "blank" 'slotname))
 
@@ -577,539 +577,539 @@
 
 (cl:export '#.(swig-lispify "foo_bar" 'slotname))
 
-(cffi:defctype #.(swig-lispify "mpscp" 'typename) #.(swig-lispify "mpscp" 'classname))
+(cffi:defctype #.(swig-lispify "glp_mpscp" 'typename) #.(swig-lispify "glp_mpscp" 'classname))
 
-(cl:export '#.(swig-lispify "mpscp" 'typename))
+(cl:export '#.(swig-lispify "glp_mpscp" 'typename))
 
-(cffi:defcstruct #.(swig-lispify "cpxcp" 'classname)
+(cffi:defcstruct #.(swig-lispify "glp_cpxcp" 'classname)
 	(#.(swig-lispify "foo_bar" 'slotname) :pointer))
 
-(cl:export '#.(swig-lispify "cpxcp" 'classname))
+(cl:export '#.(swig-lispify "glp_cpxcp" 'classname))
 
 (cl:export '#.(swig-lispify "foo_bar" 'slotname))
 
-(cffi:defctype #.(swig-lispify "cpxcp" 'typename) #.(swig-lispify "cpxcp" 'classname))
+(cffi:defctype #.(swig-lispify "glp_cpxcp" 'typename) #.(swig-lispify "glp_cpxcp" 'classname))
 
-(cl:export '#.(swig-lispify "cpxcp" 'typename))
+(cl:export '#.(swig-lispify "glp_cpxcp" 'typename))
 
-(cffi:defctype #.(swig-lispify "tran" 'typename) :pointer)
+(cffi:defctype #.(swig-lispify "glp_tran" 'typename) :pointer)
 
-(cl:export '#.(swig-lispify "tran" 'typename))
+(cl:export '#.(swig-lispify "glp_tran" 'typename))
 
-(cffi:defcfun ("glp_create_prob" #.(swig-lispify "create_prob" 'function)) :pointer)
+(cffi:defcfun ("glp_create_prob" #.(swig-lispify "glp_create_prob" 'function)) :pointer)
 
-(cl:export '#.(swig-lispify "create_prob" 'function))
+(cl:export '#.(swig-lispify "glp_create_prob" 'function))
 
-(cffi:defcfun ("glp_set_prob_name" #.(swig-lispify "set_prob_name" 'function)) :void
+(cffi:defcfun ("glp_set_prob_name" #.(swig-lispify "glp_set_prob_name" 'function)) :void
   (P :pointer)
   (name :string))
 
-(cl:export '#.(swig-lispify "set_prob_name" 'function))
+(cl:export '#.(swig-lispify "glp_set_prob_name" 'function))
 
-(cffi:defcfun ("glp_set_obj_name" #.(swig-lispify "set_obj_name" 'function)) :void
+(cffi:defcfun ("glp_set_obj_name" #.(swig-lispify "glp_set_obj_name" 'function)) :void
   (P :pointer)
   (name :string))
 
-(cl:export '#.(swig-lispify "set_obj_name" 'function))
+(cl:export '#.(swig-lispify "glp_set_obj_name" 'function))
 
-(cffi:defcfun ("glp_set_obj_dir" #.(swig-lispify "set_obj_dir" 'function)) :void
+(cffi:defcfun ("glp_set_obj_dir" #.(swig-lispify "glp_set_obj_dir" 'function)) :void
   (P :pointer)
   (dir :int))
 
-(cl:export '#.(swig-lispify "set_obj_dir" 'function))
+(cl:export '#.(swig-lispify "glp_set_obj_dir" 'function))
 
-(cffi:defcfun ("glp_add_rows" #.(swig-lispify "add_rows" 'function)) :int
+(cffi:defcfun ("glp_add_rows" #.(swig-lispify "glp_add_rows" 'function)) :int
   (P :pointer)
   (nrs :int))
 
-(cl:export '#.(swig-lispify "add_rows" 'function))
+(cl:export '#.(swig-lispify "glp_add_rows" 'function))
 
-(cffi:defcfun ("glp_add_cols" #.(swig-lispify "add_cols" 'function)) :int
+(cffi:defcfun ("glp_add_cols" #.(swig-lispify "glp_add_cols" 'function)) :int
   (P :pointer)
   (ncs :int))
 
-(cl:export '#.(swig-lispify "add_cols" 'function))
+(cl:export '#.(swig-lispify "glp_add_cols" 'function))
 
-(cffi:defcfun ("glp_set_row_name" #.(swig-lispify "set_row_name" 'function)) :void
+(cffi:defcfun ("glp_set_row_name" #.(swig-lispify "glp_set_row_name" 'function)) :void
   (P :pointer)
   (i :int)
   (name :string))
 
-(cl:export '#.(swig-lispify "set_row_name" 'function))
+(cl:export '#.(swig-lispify "glp_set_row_name" 'function))
 
-(cffi:defcfun ("glp_set_col_name" #.(swig-lispify "set_col_name" 'function)) :void
+(cffi:defcfun ("glp_set_col_name" #.(swig-lispify "glp_set_col_name" 'function)) :void
   (P :pointer)
   (j :int)
   (name :string))
 
-(cl:export '#.(swig-lispify "set_col_name" 'function))
+(cl:export '#.(swig-lispify "glp_set_col_name" 'function))
 
-(cffi:defcfun ("glp_set_row_bnds" #.(swig-lispify "set_row_bnds" 'function)) :void
+(cffi:defcfun ("glp_set_row_bnds" #.(swig-lispify "glp_set_row_bnds" 'function)) :void
   (P :pointer)
   (i :int)
   (type :int)
   (lb :double)
   (ub :double))
 
-(cl:export '#.(swig-lispify "set_row_bnds" 'function))
+(cl:export '#.(swig-lispify "glp_set_row_bnds" 'function))
 
-(cffi:defcfun ("glp_set_col_bnds" #.(swig-lispify "set_col_bnds" 'function)) :void
+(cffi:defcfun ("glp_set_col_bnds" #.(swig-lispify "glp_set_col_bnds" 'function)) :void
   (P :pointer)
   (j :int)
   (type :int)
   (lb :double)
   (ub :double))
 
-(cl:export '#.(swig-lispify "set_col_bnds" 'function))
+(cl:export '#.(swig-lispify "glp_set_col_bnds" 'function))
 
-(cffi:defcfun ("glp_set_obj_coef" #.(swig-lispify "set_obj_coef" 'function)) :void
+(cffi:defcfun ("glp_set_obj_coef" #.(swig-lispify "glp_set_obj_coef" 'function)) :void
   (P :pointer)
   (j :int)
   (coef :double))
 
-(cl:export '#.(swig-lispify "set_obj_coef" 'function))
+(cl:export '#.(swig-lispify "glp_set_obj_coef" 'function))
 
-(cffi:defcfun ("glp_set_mat_row" #.(swig-lispify "set_mat_row" 'function)) :void
+(cffi:defcfun ("glp_set_mat_row" #.(swig-lispify "glp_set_mat_row" 'function)) :void
   (P :pointer)
   (i :int)
   (len :int)
   (ind :pointer)
   (val :pointer))
 
-(cl:export '#.(swig-lispify "set_mat_row" 'function))
+(cl:export '#.(swig-lispify "glp_set_mat_row" 'function))
 
-(cffi:defcfun ("glp_set_mat_col" #.(swig-lispify "set_mat_col" 'function)) :void
+(cffi:defcfun ("glp_set_mat_col" #.(swig-lispify "glp_set_mat_col" 'function)) :void
   (P :pointer)
   (j :int)
   (len :int)
   (ind :pointer)
   (val :pointer))
 
-(cl:export '#.(swig-lispify "set_mat_col" 'function))
+(cl:export '#.(swig-lispify "glp_set_mat_col" 'function))
 
-(cffi:defcfun ("glp_load_matrix" #.(swig-lispify "load_matrix" 'function)) :void
+(cffi:defcfun ("glp_load_matrix" #.(swig-lispify "glp_load_matrix" 'function)) :void
   (P :pointer)
   (ne :int)
   (ia :pointer)
   (ja :pointer)
   (ar :pointer))
 
-(cl:export '#.(swig-lispify "load_matrix" 'function))
+(cl:export '#.(swig-lispify "glp_load_matrix" 'function))
 
-(cffi:defcfun ("glp_check_dup" #.(swig-lispify "check_dup" 'function)) :int
+(cffi:defcfun ("glp_check_dup" #.(swig-lispify "glp_check_dup" 'function)) :int
   (m :int)
   (n :int)
   (ne :int)
   (ia :pointer)
   (ja :pointer))
 
-(cl:export '#.(swig-lispify "check_dup" 'function))
+(cl:export '#.(swig-lispify "glp_check_dup" 'function))
 
-(cffi:defcfun ("glp_sort_matrix" #.(swig-lispify "sort_matrix" 'function)) :void
+(cffi:defcfun ("glp_sort_matrix" #.(swig-lispify "glp_sort_matrix" 'function)) :void
   (P :pointer))
 
-(cl:export '#.(swig-lispify "sort_matrix" 'function))
+(cl:export '#.(swig-lispify "glp_sort_matrix" 'function))
 
-(cffi:defcfun ("glp_del_rows" #.(swig-lispify "del_rows" 'function)) :void
+(cffi:defcfun ("glp_del_rows" #.(swig-lispify "glp_del_rows" 'function)) :void
   (P :pointer)
   (nrs :int)
   (num :pointer))
 
-(cl:export '#.(swig-lispify "del_rows" 'function))
+(cl:export '#.(swig-lispify "glp_del_rows" 'function))
 
-(cffi:defcfun ("glp_del_cols" #.(swig-lispify "del_cols" 'function)) :void
+(cffi:defcfun ("glp_del_cols" #.(swig-lispify "glp_del_cols" 'function)) :void
   (P :pointer)
   (ncs :int)
   (num :pointer))
 
-(cl:export '#.(swig-lispify "del_cols" 'function))
+(cl:export '#.(swig-lispify "glp_del_cols" 'function))
 
-(cffi:defcfun ("glp_copy_prob" #.(swig-lispify "copy_prob" 'function)) :void
+(cffi:defcfun ("glp_copy_prob" #.(swig-lispify "glp_copy_prob" 'function)) :void
   (dest :pointer)
   (prob :pointer)
   (names :int))
 
-(cl:export '#.(swig-lispify "copy_prob" 'function))
+(cl:export '#.(swig-lispify "glp_copy_prob" 'function))
 
-(cffi:defcfun ("glp_erase_prob" #.(swig-lispify "erase_prob" 'function)) :void
+(cffi:defcfun ("glp_erase_prob" #.(swig-lispify "glp_erase_prob" 'function)) :void
   (P :pointer))
 
-(cl:export '#.(swig-lispify "erase_prob" 'function))
+(cl:export '#.(swig-lispify "glp_erase_prob" 'function))
 
-(cffi:defcfun ("glp_delete_prob" #.(swig-lispify "delete_prob" 'function)) :void
+(cffi:defcfun ("glp_delete_prob" #.(swig-lispify "glp_delete_prob" 'function)) :void
   (P :pointer))
 
-(cl:export '#.(swig-lispify "delete_prob" 'function))
+(cl:export '#.(swig-lispify "glp_delete_prob" 'function))
 
-(cffi:defcfun ("glp_get_prob_name" #.(swig-lispify "get_prob_name" 'function)) :string
+(cffi:defcfun ("glp_get_prob_name" #.(swig-lispify "glp_get_prob_name" 'function)) :string
   (P :pointer))
 
-(cl:export '#.(swig-lispify "get_prob_name" 'function))
+(cl:export '#.(swig-lispify "glp_get_prob_name" 'function))
 
-(cffi:defcfun ("glp_get_obj_name" #.(swig-lispify "get_obj_name" 'function)) :string
+(cffi:defcfun ("glp_get_obj_name" #.(swig-lispify "glp_get_obj_name" 'function)) :string
   (P :pointer))
 
-(cl:export '#.(swig-lispify "get_obj_name" 'function))
+(cl:export '#.(swig-lispify "glp_get_obj_name" 'function))
 
-(cffi:defcfun ("glp_get_obj_dir" #.(swig-lispify "get_obj_dir" 'function)) :int
+(cffi:defcfun ("glp_get_obj_dir" #.(swig-lispify "glp_get_obj_dir" 'function)) :int
   (P :pointer))
 
-(cl:export '#.(swig-lispify "get_obj_dir" 'function))
+(cl:export '#.(swig-lispify "glp_get_obj_dir" 'function))
 
-(cffi:defcfun ("glp_get_num_rows" #.(swig-lispify "get_num_rows" 'function)) :int
+(cffi:defcfun ("glp_get_num_rows" #.(swig-lispify "glp_get_num_rows" 'function)) :int
   (P :pointer))
 
-(cl:export '#.(swig-lispify "get_num_rows" 'function))
+(cl:export '#.(swig-lispify "glp_get_num_rows" 'function))
 
-(cffi:defcfun ("glp_get_num_cols" #.(swig-lispify "get_num_cols" 'function)) :int
+(cffi:defcfun ("glp_get_num_cols" #.(swig-lispify "glp_get_num_cols" 'function)) :int
   (P :pointer))
 
-(cl:export '#.(swig-lispify "get_num_cols" 'function))
+(cl:export '#.(swig-lispify "glp_get_num_cols" 'function))
 
-(cffi:defcfun ("glp_get_row_name" #.(swig-lispify "get_row_name" 'function)) :string
+(cffi:defcfun ("glp_get_row_name" #.(swig-lispify "glp_get_row_name" 'function)) :string
   (P :pointer)
   (i :int))
 
-(cl:export '#.(swig-lispify "get_row_name" 'function))
+(cl:export '#.(swig-lispify "glp_get_row_name" 'function))
 
-(cffi:defcfun ("glp_get_col_name" #.(swig-lispify "get_col_name" 'function)) :string
+(cffi:defcfun ("glp_get_col_name" #.(swig-lispify "glp_get_col_name" 'function)) :string
   (P :pointer)
   (j :int))
 
-(cl:export '#.(swig-lispify "get_col_name" 'function))
+(cl:export '#.(swig-lispify "glp_get_col_name" 'function))
 
-(cffi:defcfun ("glp_get_row_type" #.(swig-lispify "get_row_type" 'function)) :int
+(cffi:defcfun ("glp_get_row_type" #.(swig-lispify "glp_get_row_type" 'function)) :int
   (P :pointer)
   (i :int))
 
-(cl:export '#.(swig-lispify "get_row_type" 'function))
+(cl:export '#.(swig-lispify "glp_get_row_type" 'function))
 
-(cffi:defcfun ("glp_get_row_lb" #.(swig-lispify "get_row_lb" 'function)) :double
+(cffi:defcfun ("glp_get_row_lb" #.(swig-lispify "glp_get_row_lb" 'function)) :double
   (P :pointer)
   (i :int))
 
-(cl:export '#.(swig-lispify "get_row_lb" 'function))
+(cl:export '#.(swig-lispify "glp_get_row_lb" 'function))
 
-(cffi:defcfun ("glp_get_row_ub" #.(swig-lispify "get_row_ub" 'function)) :double
+(cffi:defcfun ("glp_get_row_ub" #.(swig-lispify "glp_get_row_ub" 'function)) :double
   (P :pointer)
   (i :int))
 
-(cl:export '#.(swig-lispify "get_row_ub" 'function))
+(cl:export '#.(swig-lispify "glp_get_row_ub" 'function))
 
-(cffi:defcfun ("glp_get_col_type" #.(swig-lispify "get_col_type" 'function)) :int
+(cffi:defcfun ("glp_get_col_type" #.(swig-lispify "glp_get_col_type" 'function)) :int
   (P :pointer)
   (j :int))
 
-(cl:export '#.(swig-lispify "get_col_type" 'function))
+(cl:export '#.(swig-lispify "glp_get_col_type" 'function))
 
-(cffi:defcfun ("glp_get_col_lb" #.(swig-lispify "get_col_lb" 'function)) :double
+(cffi:defcfun ("glp_get_col_lb" #.(swig-lispify "glp_get_col_lb" 'function)) :double
   (P :pointer)
   (j :int))
 
-(cl:export '#.(swig-lispify "get_col_lb" 'function))
+(cl:export '#.(swig-lispify "glp_get_col_lb" 'function))
 
-(cffi:defcfun ("glp_get_col_ub" #.(swig-lispify "get_col_ub" 'function)) :double
+(cffi:defcfun ("glp_get_col_ub" #.(swig-lispify "glp_get_col_ub" 'function)) :double
   (P :pointer)
   (j :int))
 
-(cl:export '#.(swig-lispify "get_col_ub" 'function))
+(cl:export '#.(swig-lispify "glp_get_col_ub" 'function))
 
-(cffi:defcfun ("glp_get_obj_coef" #.(swig-lispify "get_obj_coef" 'function)) :double
+(cffi:defcfun ("glp_get_obj_coef" #.(swig-lispify "glp_get_obj_coef" 'function)) :double
   (P :pointer)
   (j :int))
 
-(cl:export '#.(swig-lispify "get_obj_coef" 'function))
+(cl:export '#.(swig-lispify "glp_get_obj_coef" 'function))
 
-(cffi:defcfun ("glp_get_num_nz" #.(swig-lispify "get_num_nz" 'function)) :int
+(cffi:defcfun ("glp_get_num_nz" #.(swig-lispify "glp_get_num_nz" 'function)) :int
   (P :pointer))
 
-(cl:export '#.(swig-lispify "get_num_nz" 'function))
+(cl:export '#.(swig-lispify "glp_get_num_nz" 'function))
 
-(cffi:defcfun ("glp_get_mat_row" #.(swig-lispify "get_mat_row" 'function)) :int
+(cffi:defcfun ("glp_get_mat_row" #.(swig-lispify "glp_get_mat_row" 'function)) :int
   (P :pointer)
   (i :int)
   (ind :pointer)
   (val :pointer))
 
-(cl:export '#.(swig-lispify "get_mat_row" 'function))
+(cl:export '#.(swig-lispify "glp_get_mat_row" 'function))
 
-(cffi:defcfun ("glp_get_mat_col" #.(swig-lispify "get_mat_col" 'function)) :int
+(cffi:defcfun ("glp_get_mat_col" #.(swig-lispify "glp_get_mat_col" 'function)) :int
   (P :pointer)
   (j :int)
   (ind :pointer)
   (val :pointer))
 
-(cl:export '#.(swig-lispify "get_mat_col" 'function))
+(cl:export '#.(swig-lispify "glp_get_mat_col" 'function))
 
-(cffi:defcfun ("glp_create_index" #.(swig-lispify "create_index" 'function)) :void
+(cffi:defcfun ("glp_create_index" #.(swig-lispify "glp_create_index" 'function)) :void
   (P :pointer))
 
-(cl:export '#.(swig-lispify "create_index" 'function))
+(cl:export '#.(swig-lispify "glp_create_index" 'function))
 
-(cffi:defcfun ("glp_find_row" #.(swig-lispify "find_row" 'function)) :int
+(cffi:defcfun ("glp_find_row" #.(swig-lispify "glp_find_row" 'function)) :int
   (P :pointer)
   (name :string))
 
-(cl:export '#.(swig-lispify "find_row" 'function))
+(cl:export '#.(swig-lispify "glp_find_row" 'function))
 
-(cffi:defcfun ("glp_find_col" #.(swig-lispify "find_col" 'function)) :int
+(cffi:defcfun ("glp_find_col" #.(swig-lispify "glp_find_col" 'function)) :int
   (P :pointer)
   (name :string))
 
-(cl:export '#.(swig-lispify "find_col" 'function))
+(cl:export '#.(swig-lispify "glp_find_col" 'function))
 
-(cffi:defcfun ("glp_delete_index" #.(swig-lispify "delete_index" 'function)) :void
+(cffi:defcfun ("glp_delete_index" #.(swig-lispify "glp_delete_index" 'function)) :void
   (P :pointer))
 
-(cl:export '#.(swig-lispify "delete_index" 'function))
+(cl:export '#.(swig-lispify "glp_delete_index" 'function))
 
-(cffi:defcfun ("glp_set_rii" #.(swig-lispify "set_rii" 'function)) :void
+(cffi:defcfun ("glp_set_rii" #.(swig-lispify "glp_set_rii" 'function)) :void
   (P :pointer)
   (i :int)
   (rii :double))
 
-(cl:export '#.(swig-lispify "set_rii" 'function))
+(cl:export '#.(swig-lispify "glp_set_rii" 'function))
 
-(cffi:defcfun ("glp_set_sjj" #.(swig-lispify "set_sjj" 'function)) :void
+(cffi:defcfun ("glp_set_sjj" #.(swig-lispify "glp_set_sjj" 'function)) :void
   (P :pointer)
   (j :int)
   (sjj :double))
 
-(cl:export '#.(swig-lispify "set_sjj" 'function))
+(cl:export '#.(swig-lispify "glp_set_sjj" 'function))
 
-(cffi:defcfun ("glp_get_rii" #.(swig-lispify "get_rii" 'function)) :double
+(cffi:defcfun ("glp_get_rii" #.(swig-lispify "glp_get_rii" 'function)) :double
   (P :pointer)
   (i :int))
 
-(cl:export '#.(swig-lispify "get_rii" 'function))
+(cl:export '#.(swig-lispify "glp_get_rii" 'function))
 
-(cffi:defcfun ("glp_get_sjj" #.(swig-lispify "get_sjj" 'function)) :double
+(cffi:defcfun ("glp_get_sjj" #.(swig-lispify "glp_get_sjj" 'function)) :double
   (P :pointer)
   (j :int))
 
-(cl:export '#.(swig-lispify "get_sjj" 'function))
+(cl:export '#.(swig-lispify "glp_get_sjj" 'function))
 
-(cffi:defcfun ("glp_scale_prob" #.(swig-lispify "scale_prob" 'function)) :void
+(cffi:defcfun ("glp_scale_prob" #.(swig-lispify "glp_scale_prob" 'function)) :void
   (P :pointer)
   (flags :int))
 
-(cl:export '#.(swig-lispify "scale_prob" 'function))
+(cl:export '#.(swig-lispify "glp_scale_prob" 'function))
 
-(cffi:defcfun ("glp_unscale_prob" #.(swig-lispify "unscale_prob" 'function)) :void
+(cffi:defcfun ("glp_unscale_prob" #.(swig-lispify "glp_unscale_prob" 'function)) :void
   (P :pointer))
 
-(cl:export '#.(swig-lispify "unscale_prob" 'function))
+(cl:export '#.(swig-lispify "glp_unscale_prob" 'function))
 
-(cffi:defcfun ("glp_set_row_stat" #.(swig-lispify "set_row_stat" 'function)) :void
+(cffi:defcfun ("glp_set_row_stat" #.(swig-lispify "glp_set_row_stat" 'function)) :void
   (P :pointer)
   (i :int)
   (stat :int))
 
-(cl:export '#.(swig-lispify "set_row_stat" 'function))
+(cl:export '#.(swig-lispify "glp_set_row_stat" 'function))
 
-(cffi:defcfun ("glp_set_col_stat" #.(swig-lispify "set_col_stat" 'function)) :void
+(cffi:defcfun ("glp_set_col_stat" #.(swig-lispify "glp_set_col_stat" 'function)) :void
   (P :pointer)
   (j :int)
   (stat :int))
 
-(cl:export '#.(swig-lispify "set_col_stat" 'function))
+(cl:export '#.(swig-lispify "glp_set_col_stat" 'function))
 
-(cffi:defcfun ("glp_std_basis" #.(swig-lispify "std_basis" 'function)) :void
+(cffi:defcfun ("glp_std_basis" #.(swig-lispify "glp_std_basis" 'function)) :void
   (P :pointer))
 
-(cl:export '#.(swig-lispify "std_basis" 'function))
+(cl:export '#.(swig-lispify "glp_std_basis" 'function))
 
-(cffi:defcfun ("glp_adv_basis" #.(swig-lispify "adv_basis" 'function)) :void
+(cffi:defcfun ("glp_adv_basis" #.(swig-lispify "glp_adv_basis" 'function)) :void
   (P :pointer)
   (flags :int))
 
-(cl:export '#.(swig-lispify "adv_basis" 'function))
+(cl:export '#.(swig-lispify "glp_adv_basis" 'function))
 
-(cffi:defcfun ("glp_cpx_basis" #.(swig-lispify "cpx_basis" 'function)) :void
+(cffi:defcfun ("glp_cpx_basis" #.(swig-lispify "glp_cpx_basis" 'function)) :void
   (P :pointer))
 
-(cl:export '#.(swig-lispify "cpx_basis" 'function))
+(cl:export '#.(swig-lispify "glp_cpx_basis" 'function))
 
-(cffi:defcfun ("glp_simplex" #.(swig-lispify "simplex" 'function)) :int
+(cffi:defcfun ("glp_simplex" #.(swig-lispify "glp_simplex" 'function)) :int
   (P :pointer)
   (parm :pointer))
 
-(cl:export '#.(swig-lispify "simplex" 'function))
+(cl:export '#.(swig-lispify "glp_simplex" 'function))
 
-(cffi:defcfun ("glp_exact" #.(swig-lispify "exact" 'function)) :int
+(cffi:defcfun ("glp_exact" #.(swig-lispify "glp_exact" 'function)) :int
   (P :pointer)
   (parm :pointer))
 
-(cl:export '#.(swig-lispify "exact" 'function))
+(cl:export '#.(swig-lispify "glp_exact" 'function))
 
-(cffi:defcfun ("glp_init_smcp" #.(swig-lispify "init_smcp" 'function)) :void
+(cffi:defcfun ("glp_init_smcp" #.(swig-lispify "glp_init_smcp" 'function)) :void
   (parm :pointer))
 
-(cl:export '#.(swig-lispify "init_smcp" 'function))
+(cl:export '#.(swig-lispify "glp_init_smcp" 'function))
 
-(cffi:defcfun ("glp_get_status" #.(swig-lispify "get_status" 'function)) :int
+(cffi:defcfun ("glp_get_status" #.(swig-lispify "glp_get_status" 'function)) :int
   (P :pointer))
 
-(cl:export '#.(swig-lispify "get_status" 'function))
+(cl:export '#.(swig-lispify "glp_get_status" 'function))
 
-(cffi:defcfun ("glp_get_prim_stat" #.(swig-lispify "get_prim_stat" 'function)) :int
+(cffi:defcfun ("glp_get_prim_stat" #.(swig-lispify "glp_get_prim_stat" 'function)) :int
   (P :pointer))
 
-(cl:export '#.(swig-lispify "get_prim_stat" 'function))
+(cl:export '#.(swig-lispify "glp_get_prim_stat" 'function))
 
-(cffi:defcfun ("glp_get_dual_stat" #.(swig-lispify "get_dual_stat" 'function)) :int
+(cffi:defcfun ("glp_get_dual_stat" #.(swig-lispify "glp_get_dual_stat" 'function)) :int
   (P :pointer))
 
-(cl:export '#.(swig-lispify "get_dual_stat" 'function))
+(cl:export '#.(swig-lispify "glp_get_dual_stat" 'function))
 
-(cffi:defcfun ("glp_get_obj_val" #.(swig-lispify "get_obj_val" 'function)) :double
+(cffi:defcfun ("glp_get_obj_val" #.(swig-lispify "glp_get_obj_val" 'function)) :double
   (P :pointer))
 
-(cl:export '#.(swig-lispify "get_obj_val" 'function))
+(cl:export '#.(swig-lispify "glp_get_obj_val" 'function))
 
-(cffi:defcfun ("glp_get_row_stat" #.(swig-lispify "get_row_stat" 'function)) :int
+(cffi:defcfun ("glp_get_row_stat" #.(swig-lispify "glp_get_row_stat" 'function)) :int
   (P :pointer)
   (i :int))
 
-(cl:export '#.(swig-lispify "get_row_stat" 'function))
+(cl:export '#.(swig-lispify "glp_get_row_stat" 'function))
 
-(cffi:defcfun ("glp_get_row_prim" #.(swig-lispify "get_row_prim" 'function)) :double
+(cffi:defcfun ("glp_get_row_prim" #.(swig-lispify "glp_get_row_prim" 'function)) :double
   (P :pointer)
   (i :int))
 
-(cl:export '#.(swig-lispify "get_row_prim" 'function))
+(cl:export '#.(swig-lispify "glp_get_row_prim" 'function))
 
-(cffi:defcfun ("glp_get_row_dual" #.(swig-lispify "get_row_dual" 'function)) :double
+(cffi:defcfun ("glp_get_row_dual" #.(swig-lispify "glp_get_row_dual" 'function)) :double
   (P :pointer)
   (i :int))
 
-(cl:export '#.(swig-lispify "get_row_dual" 'function))
+(cl:export '#.(swig-lispify "glp_get_row_dual" 'function))
 
-(cffi:defcfun ("glp_get_col_stat" #.(swig-lispify "get_col_stat" 'function)) :int
+(cffi:defcfun ("glp_get_col_stat" #.(swig-lispify "glp_get_col_stat" 'function)) :int
   (P :pointer)
   (j :int))
 
-(cl:export '#.(swig-lispify "get_col_stat" 'function))
+(cl:export '#.(swig-lispify "glp_get_col_stat" 'function))
 
-(cffi:defcfun ("glp_get_col_prim" #.(swig-lispify "get_col_prim" 'function)) :double
+(cffi:defcfun ("glp_get_col_prim" #.(swig-lispify "glp_get_col_prim" 'function)) :double
   (P :pointer)
   (j :int))
 
-(cl:export '#.(swig-lispify "get_col_prim" 'function))
+(cl:export '#.(swig-lispify "glp_get_col_prim" 'function))
 
-(cffi:defcfun ("glp_get_col_dual" #.(swig-lispify "get_col_dual" 'function)) :double
+(cffi:defcfun ("glp_get_col_dual" #.(swig-lispify "glp_get_col_dual" 'function)) :double
   (P :pointer)
   (j :int))
 
-(cl:export '#.(swig-lispify "get_col_dual" 'function))
+(cl:export '#.(swig-lispify "glp_get_col_dual" 'function))
 
-(cffi:defcfun ("glp_get_unbnd_ray" #.(swig-lispify "get_unbnd_ray" 'function)) :int
+(cffi:defcfun ("glp_get_unbnd_ray" #.(swig-lispify "glp_get_unbnd_ray" 'function)) :int
   (P :pointer))
 
-(cl:export '#.(swig-lispify "get_unbnd_ray" 'function))
+(cl:export '#.(swig-lispify "glp_get_unbnd_ray" 'function))
 
-(cffi:defcfun ("glp_interior" #.(swig-lispify "interior" 'function)) :int
+(cffi:defcfun ("glp_interior" #.(swig-lispify "glp_interior" 'function)) :int
   (P :pointer)
   (parm :pointer))
 
-(cl:export '#.(swig-lispify "interior" 'function))
+(cl:export '#.(swig-lispify "glp_interior" 'function))
 
-(cffi:defcfun ("glp_init_iptcp" #.(swig-lispify "init_iptcp" 'function)) :void
+(cffi:defcfun ("glp_init_iptcp" #.(swig-lispify "glp_init_iptcp" 'function)) :void
   (parm :pointer))
 
-(cl:export '#.(swig-lispify "init_iptcp" 'function))
+(cl:export '#.(swig-lispify "glp_init_iptcp" 'function))
 
-(cffi:defcfun ("glp_ipt_status" #.(swig-lispify "ipt_status" 'function)) :int
+(cffi:defcfun ("glp_ipt_status" #.(swig-lispify "glp_ipt_status" 'function)) :int
   (P :pointer))
 
-(cl:export '#.(swig-lispify "ipt_status" 'function))
+(cl:export '#.(swig-lispify "glp_ipt_status" 'function))
 
-(cffi:defcfun ("glp_ipt_obj_val" #.(swig-lispify "ipt_obj_val" 'function)) :double
+(cffi:defcfun ("glp_ipt_obj_val" #.(swig-lispify "glp_ipt_obj_val" 'function)) :double
   (P :pointer))
 
-(cl:export '#.(swig-lispify "ipt_obj_val" 'function))
+(cl:export '#.(swig-lispify "glp_ipt_obj_val" 'function))
 
-(cffi:defcfun ("glp_ipt_row_prim" #.(swig-lispify "ipt_row_prim" 'function)) :double
+(cffi:defcfun ("glp_ipt_row_prim" #.(swig-lispify "glp_ipt_row_prim" 'function)) :double
   (P :pointer)
   (i :int))
 
-(cl:export '#.(swig-lispify "ipt_row_prim" 'function))
+(cl:export '#.(swig-lispify "glp_ipt_row_prim" 'function))
 
-(cffi:defcfun ("glp_ipt_row_dual" #.(swig-lispify "ipt_row_dual" 'function)) :double
+(cffi:defcfun ("glp_ipt_row_dual" #.(swig-lispify "glp_ipt_row_dual" 'function)) :double
   (P :pointer)
   (i :int))
 
-(cl:export '#.(swig-lispify "ipt_row_dual" 'function))
+(cl:export '#.(swig-lispify "glp_ipt_row_dual" 'function))
 
-(cffi:defcfun ("glp_ipt_col_prim" #.(swig-lispify "ipt_col_prim" 'function)) :double
+(cffi:defcfun ("glp_ipt_col_prim" #.(swig-lispify "glp_ipt_col_prim" 'function)) :double
   (P :pointer)
   (j :int))
 
-(cl:export '#.(swig-lispify "ipt_col_prim" 'function))
+(cl:export '#.(swig-lispify "glp_ipt_col_prim" 'function))
 
-(cffi:defcfun ("glp_ipt_col_dual" #.(swig-lispify "ipt_col_dual" 'function)) :double
+(cffi:defcfun ("glp_ipt_col_dual" #.(swig-lispify "glp_ipt_col_dual" 'function)) :double
   (P :pointer)
   (j :int))
 
-(cl:export '#.(swig-lispify "ipt_col_dual" 'function))
+(cl:export '#.(swig-lispify "glp_ipt_col_dual" 'function))
 
-(cffi:defcfun ("glp_set_col_kind" #.(swig-lispify "set_col_kind" 'function)) :void
+(cffi:defcfun ("glp_set_col_kind" #.(swig-lispify "glp_set_col_kind" 'function)) :void
   (P :pointer)
   (j :int)
   (kind :int))
 
-(cl:export '#.(swig-lispify "set_col_kind" 'function))
+(cl:export '#.(swig-lispify "glp_set_col_kind" 'function))
 
-(cffi:defcfun ("glp_get_col_kind" #.(swig-lispify "get_col_kind" 'function)) :int
+(cffi:defcfun ("glp_get_col_kind" #.(swig-lispify "glp_get_col_kind" 'function)) :int
   (P :pointer)
   (j :int))
 
-(cl:export '#.(swig-lispify "get_col_kind" 'function))
+(cl:export '#.(swig-lispify "glp_get_col_kind" 'function))
 
-(cffi:defcfun ("glp_get_num_int" #.(swig-lispify "get_num_int" 'function)) :int
+(cffi:defcfun ("glp_get_num_int" #.(swig-lispify "glp_get_num_int" 'function)) :int
   (P :pointer))
 
-(cl:export '#.(swig-lispify "get_num_int" 'function))
+(cl:export '#.(swig-lispify "glp_get_num_int" 'function))
 
-(cffi:defcfun ("glp_get_num_bin" #.(swig-lispify "get_num_bin" 'function)) :int
+(cffi:defcfun ("glp_get_num_bin" #.(swig-lispify "glp_get_num_bin" 'function)) :int
   (P :pointer))
 
-(cl:export '#.(swig-lispify "get_num_bin" 'function))
+(cl:export '#.(swig-lispify "glp_get_num_bin" 'function))
 
-(cffi:defcfun ("glp_intopt" #.(swig-lispify "intopt" 'function)) :int
+(cffi:defcfun ("glp_intopt" #.(swig-lispify "glp_intopt" 'function)) :int
   (P :pointer)
   (parm :pointer))
 
-(cl:export '#.(swig-lispify "intopt" 'function))
+(cl:export '#.(swig-lispify "glp_intopt" 'function))
 
-(cffi:defcfun ("glp_init_iocp" #.(swig-lispify "init_iocp" 'function)) :void
+(cffi:defcfun ("glp_init_iocp" #.(swig-lispify "glp_init_iocp" 'function)) :void
   (parm :pointer))
 
-(cl:export '#.(swig-lispify "init_iocp" 'function))
+(cl:export '#.(swig-lispify "glp_init_iocp" 'function))
 
-(cffi:defcfun ("glp_mip_status" #.(swig-lispify "mip_status" 'function)) :int
+(cffi:defcfun ("glp_mip_status" #.(swig-lispify "glp_mip_status" 'function)) :int
   (P :pointer))
 
-(cl:export '#.(swig-lispify "mip_status" 'function))
+(cl:export '#.(swig-lispify "glp_mip_status" 'function))
 
-(cffi:defcfun ("glp_mip_obj_val" #.(swig-lispify "mip_obj_val" 'function)) :double
+(cffi:defcfun ("glp_mip_obj_val" #.(swig-lispify "glp_mip_obj_val" 'function)) :double
   (P :pointer))
 
-(cl:export '#.(swig-lispify "mip_obj_val" 'function))
+(cl:export '#.(swig-lispify "glp_mip_obj_val" 'function))
 
-(cffi:defcfun ("glp_mip_row_val" #.(swig-lispify "mip_row_val" 'function)) :double
+(cffi:defcfun ("glp_mip_row_val" #.(swig-lispify "glp_mip_row_val" 'function)) :double
   (P :pointer)
   (i :int))
 
-(cl:export '#.(swig-lispify "mip_row_val" 'function))
+(cl:export '#.(swig-lispify "glp_mip_row_val" 'function))
 
-(cffi:defcfun ("glp_mip_col_val" #.(swig-lispify "mip_col_val" 'function)) :double
+(cffi:defcfun ("glp_mip_col_val" #.(swig-lispify "glp_mip_col_val" 'function)) :double
   (P :pointer)
   (j :int))
 
-(cl:export '#.(swig-lispify "mip_col_val" 'function))
+(cl:export '#.(swig-lispify "glp_mip_col_val" 'function))
 
-(cffi:defcfun ("glp_check_kkt" #.(swig-lispify "check_kkt" 'function)) :void
+(cffi:defcfun ("glp_check_kkt" #.(swig-lispify "glp_check_kkt" 'function)) :void
   (P :pointer)
   (sol :int)
   (cond :int)
@@ -1118,166 +1118,166 @@
   (re_max :pointer)
   (re_ind :pointer))
 
-(cl:export '#.(swig-lispify "check_kkt" 'function))
+(cl:export '#.(swig-lispify "glp_check_kkt" 'function))
 
-(cffi:defcfun ("glp_print_sol" #.(swig-lispify "print_sol" 'function)) :int
+(cffi:defcfun ("glp_print_sol" #.(swig-lispify "glp_print_sol" 'function)) :int
   (P :pointer)
   (fname :string))
 
-(cl:export '#.(swig-lispify "print_sol" 'function))
+(cl:export '#.(swig-lispify "glp_print_sol" 'function))
 
-(cffi:defcfun ("glp_read_sol" #.(swig-lispify "read_sol" 'function)) :int
+(cffi:defcfun ("glp_read_sol" #.(swig-lispify "glp_read_sol" 'function)) :int
   (P :pointer)
   (fname :string))
 
-(cl:export '#.(swig-lispify "read_sol" 'function))
+(cl:export '#.(swig-lispify "glp_read_sol" 'function))
 
-(cffi:defcfun ("glp_write_sol" #.(swig-lispify "write_sol" 'function)) :int
+(cffi:defcfun ("glp_write_sol" #.(swig-lispify "glp_write_sol" 'function)) :int
   (P :pointer)
   (fname :string))
 
-(cl:export '#.(swig-lispify "write_sol" 'function))
+(cl:export '#.(swig-lispify "glp_write_sol" 'function))
 
-(cffi:defcfun ("glp_print_ranges" #.(swig-lispify "print_ranges" 'function)) :int
+(cffi:defcfun ("glp_print_ranges" #.(swig-lispify "glp_print_ranges" 'function)) :int
   (P :pointer)
   (len :int)
   (list :pointer)
   (flags :int)
   (fname :string))
 
-(cl:export '#.(swig-lispify "print_ranges" 'function))
+(cl:export '#.(swig-lispify "glp_print_ranges" 'function))
 
-(cffi:defcfun ("glp_print_ipt" #.(swig-lispify "print_ipt" 'function)) :int
+(cffi:defcfun ("glp_print_ipt" #.(swig-lispify "glp_print_ipt" 'function)) :int
   (P :pointer)
   (fname :string))
 
-(cl:export '#.(swig-lispify "print_ipt" 'function))
+(cl:export '#.(swig-lispify "glp_print_ipt" 'function))
 
-(cffi:defcfun ("glp_read_ipt" #.(swig-lispify "read_ipt" 'function)) :int
+(cffi:defcfun ("glp_read_ipt" #.(swig-lispify "glp_read_ipt" 'function)) :int
   (P :pointer)
   (fname :string))
 
-(cl:export '#.(swig-lispify "read_ipt" 'function))
+(cl:export '#.(swig-lispify "glp_read_ipt" 'function))
 
-(cffi:defcfun ("glp_write_ipt" #.(swig-lispify "write_ipt" 'function)) :int
+(cffi:defcfun ("glp_write_ipt" #.(swig-lispify "glp_write_ipt" 'function)) :int
   (P :pointer)
   (fname :string))
 
-(cl:export '#.(swig-lispify "write_ipt" 'function))
+(cl:export '#.(swig-lispify "glp_write_ipt" 'function))
 
-(cffi:defcfun ("glp_print_mip" #.(swig-lispify "print_mip" 'function)) :int
+(cffi:defcfun ("glp_print_mip" #.(swig-lispify "glp_print_mip" 'function)) :int
   (P :pointer)
   (fname :string))
 
-(cl:export '#.(swig-lispify "print_mip" 'function))
+(cl:export '#.(swig-lispify "glp_print_mip" 'function))
 
-(cffi:defcfun ("glp_read_mip" #.(swig-lispify "read_mip" 'function)) :int
+(cffi:defcfun ("glp_read_mip" #.(swig-lispify "glp_read_mip" 'function)) :int
   (P :pointer)
   (fname :string))
 
-(cl:export '#.(swig-lispify "read_mip" 'function))
+(cl:export '#.(swig-lispify "glp_read_mip" 'function))
 
-(cffi:defcfun ("glp_write_mip" #.(swig-lispify "write_mip" 'function)) :int
+(cffi:defcfun ("glp_write_mip" #.(swig-lispify "glp_write_mip" 'function)) :int
   (P :pointer)
   (fname :string))
 
-(cl:export '#.(swig-lispify "write_mip" 'function))
+(cl:export '#.(swig-lispify "glp_write_mip" 'function))
 
-(cffi:defcfun ("glp_bf_exists" #.(swig-lispify "bf_exists" 'function)) :int
+(cffi:defcfun ("glp_bf_exists" #.(swig-lispify "glp_bf_exists" 'function)) :int
   (P :pointer))
 
-(cl:export '#.(swig-lispify "bf_exists" 'function))
+(cl:export '#.(swig-lispify "glp_bf_exists" 'function))
 
-(cffi:defcfun ("glp_factorize" #.(swig-lispify "factorize" 'function)) :int
+(cffi:defcfun ("glp_factorize" #.(swig-lispify "glp_factorize" 'function)) :int
   (P :pointer))
 
-(cl:export '#.(swig-lispify "factorize" 'function))
+(cl:export '#.(swig-lispify "glp_factorize" 'function))
 
-(cffi:defcfun ("glp_bf_updated" #.(swig-lispify "bf_updated" 'function)) :int
+(cffi:defcfun ("glp_bf_updated" #.(swig-lispify "glp_bf_updated" 'function)) :int
   (P :pointer))
 
-(cl:export '#.(swig-lispify "bf_updated" 'function))
+(cl:export '#.(swig-lispify "glp_bf_updated" 'function))
 
-(cffi:defcfun ("glp_get_bfcp" #.(swig-lispify "get_bfcp" 'function)) :void
+(cffi:defcfun ("glp_get_bfcp" #.(swig-lispify "glp_get_bfcp" 'function)) :void
   (P :pointer)
   (parm :pointer))
 
-(cl:export '#.(swig-lispify "get_bfcp" 'function))
+(cl:export '#.(swig-lispify "glp_get_bfcp" 'function))
 
-(cffi:defcfun ("glp_set_bfcp" #.(swig-lispify "set_bfcp" 'function)) :void
+(cffi:defcfun ("glp_set_bfcp" #.(swig-lispify "glp_set_bfcp" 'function)) :void
   (P :pointer)
   (parm :pointer))
 
-(cl:export '#.(swig-lispify "set_bfcp" 'function))
+(cl:export '#.(swig-lispify "glp_set_bfcp" 'function))
 
-(cffi:defcfun ("glp_get_bhead" #.(swig-lispify "get_bhead" 'function)) :int
+(cffi:defcfun ("glp_get_bhead" #.(swig-lispify "glp_get_bhead" 'function)) :int
   (P :pointer)
   (k :int))
 
-(cl:export '#.(swig-lispify "get_bhead" 'function))
+(cl:export '#.(swig-lispify "glp_get_bhead" 'function))
 
-(cffi:defcfun ("glp_get_row_bind" #.(swig-lispify "get_row_bind" 'function)) :int
+(cffi:defcfun ("glp_get_row_bind" #.(swig-lispify "glp_get_row_bind" 'function)) :int
   (P :pointer)
   (i :int))
 
-(cl:export '#.(swig-lispify "get_row_bind" 'function))
+(cl:export '#.(swig-lispify "glp_get_row_bind" 'function))
 
-(cffi:defcfun ("glp_get_col_bind" #.(swig-lispify "get_col_bind" 'function)) :int
+(cffi:defcfun ("glp_get_col_bind" #.(swig-lispify "glp_get_col_bind" 'function)) :int
   (P :pointer)
   (j :int))
 
-(cl:export '#.(swig-lispify "get_col_bind" 'function))
+(cl:export '#.(swig-lispify "glp_get_col_bind" 'function))
 
-(cffi:defcfun ("glp_ftran" #.(swig-lispify "ftran" 'function)) :void
+(cffi:defcfun ("glp_ftran" #.(swig-lispify "glp_ftran" 'function)) :void
   (P :pointer)
   (x :pointer))
 
-(cl:export '#.(swig-lispify "ftran" 'function))
+(cl:export '#.(swig-lispify "glp_ftran" 'function))
 
-(cffi:defcfun ("glp_btran" #.(swig-lispify "btran" 'function)) :void
+(cffi:defcfun ("glp_btran" #.(swig-lispify "glp_btran" 'function)) :void
   (P :pointer)
   (x :pointer))
 
-(cl:export '#.(swig-lispify "btran" 'function))
+(cl:export '#.(swig-lispify "glp_btran" 'function))
 
-(cffi:defcfun ("glp_warm_up" #.(swig-lispify "warm_up" 'function)) :int
+(cffi:defcfun ("glp_warm_up" #.(swig-lispify "glp_warm_up" 'function)) :int
   (P :pointer))
 
-(cl:export '#.(swig-lispify "warm_up" 'function))
+(cl:export '#.(swig-lispify "glp_warm_up" 'function))
 
-(cffi:defcfun ("glp_eval_tab_row" #.(swig-lispify "eval_tab_row" 'function)) :int
+(cffi:defcfun ("glp_eval_tab_row" #.(swig-lispify "glp_eval_tab_row" 'function)) :int
   (P :pointer)
   (k :int)
   (ind :pointer)
   (val :pointer))
 
-(cl:export '#.(swig-lispify "eval_tab_row" 'function))
+(cl:export '#.(swig-lispify "glp_eval_tab_row" 'function))
 
-(cffi:defcfun ("glp_eval_tab_col" #.(swig-lispify "eval_tab_col" 'function)) :int
+(cffi:defcfun ("glp_eval_tab_col" #.(swig-lispify "glp_eval_tab_col" 'function)) :int
   (P :pointer)
   (k :int)
   (ind :pointer)
   (val :pointer))
 
-(cl:export '#.(swig-lispify "eval_tab_col" 'function))
+(cl:export '#.(swig-lispify "glp_eval_tab_col" 'function))
 
-(cffi:defcfun ("glp_transform_row" #.(swig-lispify "transform_row" 'function)) :int
+(cffi:defcfun ("glp_transform_row" #.(swig-lispify "glp_transform_row" 'function)) :int
   (P :pointer)
   (len :int)
   (ind :pointer)
   (val :pointer))
 
-(cl:export '#.(swig-lispify "transform_row" 'function))
+(cl:export '#.(swig-lispify "glp_transform_row" 'function))
 
-(cffi:defcfun ("glp_transform_col" #.(swig-lispify "transform_col" 'function)) :int
+(cffi:defcfun ("glp_transform_col" #.(swig-lispify "glp_transform_col" 'function)) :int
   (P :pointer)
   (len :int)
   (ind :pointer)
   (val :pointer))
 
-(cl:export '#.(swig-lispify "transform_col" 'function))
+(cl:export '#.(swig-lispify "glp_transform_col" 'function))
 
-(cffi:defcfun ("glp_prim_rtest" #.(swig-lispify "prim_rtest" 'function)) :int
+(cffi:defcfun ("glp_prim_rtest" #.(swig-lispify "glp_prim_rtest" 'function)) :int
   (P :pointer)
   (len :int)
   (ind :pointer)
@@ -1285,9 +1285,9 @@
   (dir :int)
   (eps :double))
 
-(cl:export '#.(swig-lispify "prim_rtest" 'function))
+(cl:export '#.(swig-lispify "glp_prim_rtest" 'function))
 
-(cffi:defcfun ("glp_dual_rtest" #.(swig-lispify "dual_rtest" 'function)) :int
+(cffi:defcfun ("glp_dual_rtest" #.(swig-lispify "glp_dual_rtest" 'function)) :int
   (P :pointer)
   (len :int)
   (ind :pointer)
@@ -1295,9 +1295,9 @@
   (dir :int)
   (eps :double))
 
-(cl:export '#.(swig-lispify "dual_rtest" 'function))
+(cl:export '#.(swig-lispify "glp_dual_rtest" 'function))
 
-(cffi:defcfun ("glp_analyze_bound" #.(swig-lispify "analyze_bound" 'function)) :void
+(cffi:defcfun ("glp_analyze_bound" #.(swig-lispify "glp_analyze_bound" 'function)) :void
   (P :pointer)
   (k :int)
   (value1 :pointer)
@@ -1305,9 +1305,9 @@
   (value2 :pointer)
   (var2 :pointer))
 
-(cl:export '#.(swig-lispify "analyze_bound" 'function))
+(cl:export '#.(swig-lispify "glp_analyze_bound" 'function))
 
-(cffi:defcfun ("glp_analyze_coef" #.(swig-lispify "analyze_coef" 'function)) :void
+(cffi:defcfun ("glp_analyze_coef" #.(swig-lispify "glp_analyze_coef" 'function)) :void
   (P :pointer)
   (k :int)
   (coef1 :pointer)
@@ -1317,90 +1317,90 @@
   (var2 :pointer)
   (value2 :pointer))
 
-(cl:export '#.(swig-lispify "analyze_coef" 'function))
+(cl:export '#.(swig-lispify "glp_analyze_coef" 'function))
 
-(cffi:defcfun ("glp_ios_reason" #.(swig-lispify "ios_reason" 'function)) :int
+(cffi:defcfun ("glp_ios_reason" #.(swig-lispify "glp_ios_reason" 'function)) :int
   (t_arg0 :pointer))
 
-(cl:export '#.(swig-lispify "ios_reason" 'function))
+(cl:export '#.(swig-lispify "glp_ios_reason" 'function))
 
-(cffi:defcfun ("glp_ios_get_prob" #.(swig-lispify "ios_get_prob" 'function)) :pointer
+(cffi:defcfun ("glp_ios_get_prob" #.(swig-lispify "glp_ios_get_prob" 'function)) :pointer
   (t_arg0 :pointer))
 
-(cl:export '#.(swig-lispify "ios_get_prob" 'function))
+(cl:export '#.(swig-lispify "glp_ios_get_prob" 'function))
 
-(cffi:defcfun ("glp_ios_tree_size" #.(swig-lispify "ios_tree_size" 'function)) :void
+(cffi:defcfun ("glp_ios_tree_size" #.(swig-lispify "glp_ios_tree_size" 'function)) :void
   (t_arg0 :pointer)
   (a_cnt :pointer)
   (n_cnt :pointer)
   (t_cnt :pointer))
 
-(cl:export '#.(swig-lispify "ios_tree_size" 'function))
+(cl:export '#.(swig-lispify "glp_ios_tree_size" 'function))
 
-(cffi:defcfun ("glp_ios_curr_node" #.(swig-lispify "ios_curr_node" 'function)) :int
+(cffi:defcfun ("glp_ios_curr_node" #.(swig-lispify "glp_ios_curr_node" 'function)) :int
   (t_arg0 :pointer))
 
-(cl:export '#.(swig-lispify "ios_curr_node" 'function))
+(cl:export '#.(swig-lispify "glp_ios_curr_node" 'function))
 
-(cffi:defcfun ("glp_ios_next_node" #.(swig-lispify "ios_next_node" 'function)) :int
+(cffi:defcfun ("glp_ios_next_node" #.(swig-lispify "glp_ios_next_node" 'function)) :int
   (t_arg0 :pointer)
   (p :int))
 
-(cl:export '#.(swig-lispify "ios_next_node" 'function))
+(cl:export '#.(swig-lispify "glp_ios_next_node" 'function))
 
-(cffi:defcfun ("glp_ios_prev_node" #.(swig-lispify "ios_prev_node" 'function)) :int
+(cffi:defcfun ("glp_ios_prev_node" #.(swig-lispify "glp_ios_prev_node" 'function)) :int
   (t_arg0 :pointer)
   (p :int))
 
-(cl:export '#.(swig-lispify "ios_prev_node" 'function))
+(cl:export '#.(swig-lispify "glp_ios_prev_node" 'function))
 
-(cffi:defcfun ("glp_ios_up_node" #.(swig-lispify "ios_up_node" 'function)) :int
+(cffi:defcfun ("glp_ios_up_node" #.(swig-lispify "glp_ios_up_node" 'function)) :int
   (t_arg0 :pointer)
   (p :int))
 
-(cl:export '#.(swig-lispify "ios_up_node" 'function))
+(cl:export '#.(swig-lispify "glp_ios_up_node" 'function))
 
-(cffi:defcfun ("glp_ios_node_level" #.(swig-lispify "ios_node_level" 'function)) :int
+(cffi:defcfun ("glp_ios_node_level" #.(swig-lispify "glp_ios_node_level" 'function)) :int
   (t_arg0 :pointer)
   (p :int))
 
-(cl:export '#.(swig-lispify "ios_node_level" 'function))
+(cl:export '#.(swig-lispify "glp_ios_node_level" 'function))
 
-(cffi:defcfun ("glp_ios_node_bound" #.(swig-lispify "ios_node_bound" 'function)) :double
+(cffi:defcfun ("glp_ios_node_bound" #.(swig-lispify "glp_ios_node_bound" 'function)) :double
   (t_arg0 :pointer)
   (p :int))
 
-(cl:export '#.(swig-lispify "ios_node_bound" 'function))
+(cl:export '#.(swig-lispify "glp_ios_node_bound" 'function))
 
-(cffi:defcfun ("glp_ios_best_node" #.(swig-lispify "ios_best_node" 'function)) :int
+(cffi:defcfun ("glp_ios_best_node" #.(swig-lispify "glp_ios_best_node" 'function)) :int
   (t_arg0 :pointer))
 
-(cl:export '#.(swig-lispify "ios_best_node" 'function))
+(cl:export '#.(swig-lispify "glp_ios_best_node" 'function))
 
-(cffi:defcfun ("glp_ios_mip_gap" #.(swig-lispify "ios_mip_gap" 'function)) :double
+(cffi:defcfun ("glp_ios_mip_gap" #.(swig-lispify "glp_ios_mip_gap" 'function)) :double
   (t_arg0 :pointer))
 
-(cl:export '#.(swig-lispify "ios_mip_gap" 'function))
+(cl:export '#.(swig-lispify "glp_ios_mip_gap" 'function))
 
-(cffi:defcfun ("glp_ios_node_data" #.(swig-lispify "ios_node_data" 'function)) :pointer
+(cffi:defcfun ("glp_ios_node_data" #.(swig-lispify "glp_ios_node_data" 'function)) :pointer
   (t_arg0 :pointer)
   (p :int))
 
-(cl:export '#.(swig-lispify "ios_node_data" 'function))
+(cl:export '#.(swig-lispify "glp_ios_node_data" 'function))
 
-(cffi:defcfun ("glp_ios_row_attr" #.(swig-lispify "ios_row_attr" 'function)) :void
+(cffi:defcfun ("glp_ios_row_attr" #.(swig-lispify "glp_ios_row_attr" 'function)) :void
   (t_arg0 :pointer)
   (i :int)
   (attr :pointer))
 
-(cl:export '#.(swig-lispify "ios_row_attr" 'function))
+(cl:export '#.(swig-lispify "glp_ios_row_attr" 'function))
 
-(cffi:defcfun ("glp_ios_pool_size" #.(swig-lispify "ios_pool_size" 'function)) :int
+(cffi:defcfun ("glp_ios_pool_size" #.(swig-lispify "glp_ios_pool_size" 'function)) :int
   (t_arg0 :pointer))
 
-(cl:export '#.(swig-lispify "ios_pool_size" 'function))
+(cl:export '#.(swig-lispify "glp_ios_pool_size" 'function))
 
-(cffi:defcfun ("glp_ios_add_row" #.(swig-lispify "ios_add_row" 'function)) :int
+(cffi:defcfun ("glp_ios_add_row" #.(swig-lispify "glp_ios_add_row" 'function)) :int
   (t_arg0 :pointer)
   (name :string)
   (klass :int)
@@ -1411,295 +1411,295 @@
   (type :int)
   (rhs :double))
 
-(cl:export '#.(swig-lispify "ios_add_row" 'function))
+(cl:export '#.(swig-lispify "glp_ios_add_row" 'function))
 
-(cffi:defcfun ("glp_ios_del_row" #.(swig-lispify "ios_del_row" 'function)) :void
+(cffi:defcfun ("glp_ios_del_row" #.(swig-lispify "glp_ios_del_row" 'function)) :void
   (t_arg0 :pointer)
   (i :int))
 
-(cl:export '#.(swig-lispify "ios_del_row" 'function))
+(cl:export '#.(swig-lispify "glp_ios_del_row" 'function))
 
-(cffi:defcfun ("glp_ios_clear_pool" #.(swig-lispify "ios_clear_pool" 'function)) :void
+(cffi:defcfun ("glp_ios_clear_pool" #.(swig-lispify "glp_ios_clear_pool" 'function)) :void
   (t_arg0 :pointer))
 
-(cl:export '#.(swig-lispify "ios_clear_pool" 'function))
+(cl:export '#.(swig-lispify "glp_ios_clear_pool" 'function))
 
-(cffi:defcfun ("glp_ios_can_branch" #.(swig-lispify "ios_can_branch" 'function)) :int
+(cffi:defcfun ("glp_ios_can_branch" #.(swig-lispify "glp_ios_can_branch" 'function)) :int
   (t_arg0 :pointer)
   (j :int))
 
-(cl:export '#.(swig-lispify "ios_can_branch" 'function))
+(cl:export '#.(swig-lispify "glp_ios_can_branch" 'function))
 
-(cffi:defcfun ("glp_ios_branch_upon" #.(swig-lispify "ios_branch_upon" 'function)) :void
+(cffi:defcfun ("glp_ios_branch_upon" #.(swig-lispify "glp_ios_branch_upon" 'function)) :void
   (t_arg0 :pointer)
   (j :int)
   (sel :int))
 
-(cl:export '#.(swig-lispify "ios_branch_upon" 'function))
+(cl:export '#.(swig-lispify "glp_ios_branch_upon" 'function))
 
-(cffi:defcfun ("glp_ios_select_node" #.(swig-lispify "ios_select_node" 'function)) :void
+(cffi:defcfun ("glp_ios_select_node" #.(swig-lispify "glp_ios_select_node" 'function)) :void
   (t_arg0 :pointer)
   (p :int))
 
-(cl:export '#.(swig-lispify "ios_select_node" 'function))
+(cl:export '#.(swig-lispify "glp_ios_select_node" 'function))
 
-(cffi:defcfun ("glp_ios_heur_sol" #.(swig-lispify "ios_heur_sol" 'function)) :int
+(cffi:defcfun ("glp_ios_heur_sol" #.(swig-lispify "glp_ios_heur_sol" 'function)) :int
   (t_arg0 :pointer)
   (x :pointer))
 
-(cl:export '#.(swig-lispify "ios_heur_sol" 'function))
+(cl:export '#.(swig-lispify "glp_ios_heur_sol" 'function))
 
-(cffi:defcfun ("glp_ios_terminate" #.(swig-lispify "ios_terminate" 'function)) :void
+(cffi:defcfun ("glp_ios_terminate" #.(swig-lispify "glp_ios_terminate" 'function)) :void
   (t_arg0 :pointer))
 
-(cl:export '#.(swig-lispify "ios_terminate" 'function))
+(cl:export '#.(swig-lispify "glp_ios_terminate" 'function))
 
-(cffi:defcfun ("glp_init_mpscp" #.(swig-lispify "init_mpscp" 'function)) :void
+(cffi:defcfun ("glp_init_mpscp" #.(swig-lispify "glp_init_mpscp" 'function)) :void
   (parm :pointer))
 
-(cl:export '#.(swig-lispify "init_mpscp" 'function))
+(cl:export '#.(swig-lispify "glp_init_mpscp" 'function))
 
-(cffi:defcfun ("glp_read_mps" #.(swig-lispify "read_mps" 'function)) :int
+(cffi:defcfun ("glp_read_mps" #.(swig-lispify "glp_read_mps" 'function)) :int
   (P :pointer)
   (fmt :int)
   (parm :pointer)
   (fname :string))
 
-(cl:export '#.(swig-lispify "read_mps" 'function))
+(cl:export '#.(swig-lispify "glp_read_mps" 'function))
 
-(cffi:defcfun ("glp_write_mps" #.(swig-lispify "write_mps" 'function)) :int
+(cffi:defcfun ("glp_write_mps" #.(swig-lispify "glp_write_mps" 'function)) :int
   (P :pointer)
   (fmt :int)
   (parm :pointer)
   (fname :string))
 
-(cl:export '#.(swig-lispify "write_mps" 'function))
+(cl:export '#.(swig-lispify "glp_write_mps" 'function))
 
-(cffi:defcfun ("glp_init_cpxcp" #.(swig-lispify "init_cpxcp" 'function)) :void
+(cffi:defcfun ("glp_init_cpxcp" #.(swig-lispify "glp_init_cpxcp" 'function)) :void
   (parm :pointer))
 
-(cl:export '#.(swig-lispify "init_cpxcp" 'function))
+(cl:export '#.(swig-lispify "glp_init_cpxcp" 'function))
 
-(cffi:defcfun ("glp_read_lp" #.(swig-lispify "read_lp" 'function)) :int
+(cffi:defcfun ("glp_read_lp" #.(swig-lispify "glp_read_lp" 'function)) :int
   (P :pointer)
   (parm :pointer)
   (fname :string))
 
-(cl:export '#.(swig-lispify "read_lp" 'function))
+(cl:export '#.(swig-lispify "glp_read_lp" 'function))
 
-(cffi:defcfun ("glp_write_lp" #.(swig-lispify "write_lp" 'function)) :int
+(cffi:defcfun ("glp_write_lp" #.(swig-lispify "glp_write_lp" 'function)) :int
   (P :pointer)
   (parm :pointer)
   (fname :string))
 
-(cl:export '#.(swig-lispify "write_lp" 'function))
+(cl:export '#.(swig-lispify "glp_write_lp" 'function))
 
-(cffi:defcfun ("glp_read_prob" #.(swig-lispify "read_prob" 'function)) :int
+(cffi:defcfun ("glp_read_prob" #.(swig-lispify "glp_read_prob" 'function)) :int
   (P :pointer)
   (flags :int)
   (fname :string))
 
-(cl:export '#.(swig-lispify "read_prob" 'function))
+(cl:export '#.(swig-lispify "glp_read_prob" 'function))
 
-(cffi:defcfun ("glp_write_prob" #.(swig-lispify "write_prob" 'function)) :int
+(cffi:defcfun ("glp_write_prob" #.(swig-lispify "glp_write_prob" 'function)) :int
   (P :pointer)
   (flags :int)
   (fname :string))
 
-(cl:export '#.(swig-lispify "write_prob" 'function))
+(cl:export '#.(swig-lispify "glp_write_prob" 'function))
 
-(cffi:defcfun ("glp_mpl_alloc_wksp" #.(swig-lispify "mpl_alloc_wksp" 'function)) :pointer)
+(cffi:defcfun ("glp_mpl_alloc_wksp" #.(swig-lispify "glp_mpl_alloc_wksp" 'function)) :pointer)
 
-(cl:export '#.(swig-lispify "mpl_alloc_wksp" 'function))
+(cl:export '#.(swig-lispify "glp_mpl_alloc_wksp" 'function))
 
-(cffi:defcfun ("glp_mpl_read_model" #.(swig-lispify "mpl_read_model" 'function)) :int
+(cffi:defcfun ("glp_mpl_read_model" #.(swig-lispify "glp_mpl_read_model" 'function)) :int
   (tran :pointer)
   (fname :string)
   (skip :int))
 
-(cl:export '#.(swig-lispify "mpl_read_model" 'function))
+(cl:export '#.(swig-lispify "glp_mpl_read_model" 'function))
 
-(cffi:defcfun ("glp_mpl_read_data" #.(swig-lispify "mpl_read_data" 'function)) :int
+(cffi:defcfun ("glp_mpl_read_data" #.(swig-lispify "glp_mpl_read_data" 'function)) :int
   (tran :pointer)
   (fname :string))
 
-(cl:export '#.(swig-lispify "mpl_read_data" 'function))
+(cl:export '#.(swig-lispify "glp_mpl_read_data" 'function))
 
-(cffi:defcfun ("glp_mpl_generate" #.(swig-lispify "mpl_generate" 'function)) :int
+(cffi:defcfun ("glp_mpl_generate" #.(swig-lispify "glp_mpl_generate" 'function)) :int
   (tran :pointer)
   (fname :string))
 
-(cl:export '#.(swig-lispify "mpl_generate" 'function))
+(cl:export '#.(swig-lispify "glp_mpl_generate" 'function))
 
-(cffi:defcfun ("glp_mpl_build_prob" #.(swig-lispify "mpl_build_prob" 'function)) :void
+(cffi:defcfun ("glp_mpl_build_prob" #.(swig-lispify "glp_mpl_build_prob" 'function)) :void
   (tran :pointer)
   (prob :pointer))
 
-(cl:export '#.(swig-lispify "mpl_build_prob" 'function))
+(cl:export '#.(swig-lispify "glp_mpl_build_prob" 'function))
 
-(cffi:defcfun ("glp_mpl_postsolve" #.(swig-lispify "mpl_postsolve" 'function)) :int
+(cffi:defcfun ("glp_mpl_postsolve" #.(swig-lispify "glp_mpl_postsolve" 'function)) :int
   (tran :pointer)
   (prob :pointer)
   (sol :int))
 
-(cl:export '#.(swig-lispify "mpl_postsolve" 'function))
+(cl:export '#.(swig-lispify "glp_mpl_postsolve" 'function))
 
-(cffi:defcfun ("glp_mpl_free_wksp" #.(swig-lispify "mpl_free_wksp" 'function)) :void
+(cffi:defcfun ("glp_mpl_free_wksp" #.(swig-lispify "glp_mpl_free_wksp" 'function)) :void
   (tran :pointer))
 
-(cl:export '#.(swig-lispify "mpl_free_wksp" 'function))
+(cl:export '#.(swig-lispify "glp_mpl_free_wksp" 'function))
 
-(cffi:defcfun ("glp_main" #.(swig-lispify "main" 'function)) :int
+(cffi:defcfun ("glp_main" #.(swig-lispify "glp_main" 'function)) :int
   (argc :int)
   (argv :pointer))
 
-(cl:export '#.(swig-lispify "main" 'function))
+(cl:export '#.(swig-lispify "glp_main" 'function))
 
-(cffi:defcfun ("glp_read_cnfsat" #.(swig-lispify "read_cnfsat" 'function)) :int
+(cffi:defcfun ("glp_read_cnfsat" #.(swig-lispify "glp_read_cnfsat" 'function)) :int
   (P :pointer)
   (fname :string))
 
-(cl:export '#.(swig-lispify "read_cnfsat" 'function))
+(cl:export '#.(swig-lispify "glp_read_cnfsat" 'function))
 
-(cffi:defcfun ("glp_check_cnfsat" #.(swig-lispify "check_cnfsat" 'function)) :int
+(cffi:defcfun ("glp_check_cnfsat" #.(swig-lispify "glp_check_cnfsat" 'function)) :int
   (P :pointer))
 
-(cl:export '#.(swig-lispify "check_cnfsat" 'function))
+(cl:export '#.(swig-lispify "glp_check_cnfsat" 'function))
 
-(cffi:defcfun ("glp_write_cnfsat" #.(swig-lispify "write_cnfsat" 'function)) :int
+(cffi:defcfun ("glp_write_cnfsat" #.(swig-lispify "glp_write_cnfsat" 'function)) :int
   (P :pointer)
   (fname :string))
 
-(cl:export '#.(swig-lispify "write_cnfsat" 'function))
+(cl:export '#.(swig-lispify "glp_write_cnfsat" 'function))
 
-(cffi:defcfun ("glp_minisat1" #.(swig-lispify "minisat1" 'function)) :int
+(cffi:defcfun ("glp_minisat1" #.(swig-lispify "glp_minisat1" 'function)) :int
   (P :pointer))
 
-(cl:export '#.(swig-lispify "minisat1" 'function))
+(cl:export '#.(swig-lispify "glp_minisat1" 'function))
 
-(cffi:defcfun ("glp_intfeas1" #.(swig-lispify "intfeas1" 'function)) :int
+(cffi:defcfun ("glp_intfeas1" #.(swig-lispify "glp_intfeas1" 'function)) :int
   (P :pointer)
   (use_bound :int)
   (obj_bound :int))
 
-(cl:export '#.(swig-lispify "intfeas1" 'function))
+(cl:export '#.(swig-lispify "glp_intfeas1" 'function))
 
-(cffi:defcfun ("glp_init_env" #.(swig-lispify "init_env" 'function)) :int)
+(cffi:defcfun ("glp_init_env" #.(swig-lispify "glp_init_env" 'function)) :int)
 
-(cl:export '#.(swig-lispify "init_env" 'function))
+(cl:export '#.(swig-lispify "glp_init_env" 'function))
 
-(cffi:defcfun ("glp_version" #.(swig-lispify "version" 'function)) :string)
+(cffi:defcfun ("glp_version" #.(swig-lispify "glp_version" 'function)) :string)
 
-(cl:export '#.(swig-lispify "version" 'function))
+(cl:export '#.(swig-lispify "glp_version" 'function))
 
-(cffi:defcfun ("glp_free_env" #.(swig-lispify "free_env" 'function)) :int)
+(cffi:defcfun ("glp_free_env" #.(swig-lispify "glp_free_env" 'function)) :int)
 
-(cl:export '#.(swig-lispify "free_env" 'function))
+(cl:export '#.(swig-lispify "glp_free_env" 'function))
 
-(cffi:defcfun ("glp_puts" #.(swig-lispify "puts" 'function)) :void
+(cffi:defcfun ("glp_puts" #.(swig-lispify "glp_puts" 'function)) :void
   (s :string))
 
-(cl:export '#.(swig-lispify "puts" 'function))
+(cl:export '#.(swig-lispify "glp_puts" 'function))
 
-(cffi:defcfun ("glp_printf" #.(swig-lispify "printf" 'function)) :void
+(cffi:defcfun ("glp_printf" #.(swig-lispify "glp_printf" 'function)) :void
   (fmt :string)
   &rest)
 
-(cl:export '#.(swig-lispify "printf" 'function))
+(cl:export '#.(swig-lispify "glp_printf" 'function))
 
-(cffi:defcfun ("glp_vprintf" #.(swig-lispify "vprintf" 'function)) :void
+(cffi:defcfun ("glp_vprintf" #.(swig-lispify "glp_vprintf" 'function)) :void
   (fmt :string)
   (arg :pointer))
 
-(cl:export '#.(swig-lispify "vprintf" 'function))
+(cl:export '#.(swig-lispify "glp_vprintf" 'function))
 
-(cffi:defcfun ("glp_term_out" #.(swig-lispify "term_out" 'function)) :int
+(cffi:defcfun ("glp_term_out" #.(swig-lispify "glp_term_out" 'function)) :int
   (flag :int))
 
-(cl:export '#.(swig-lispify "term_out" 'function))
+(cl:export '#.(swig-lispify "glp_term_out" 'function))
 
-(cffi:defcfun ("glp_term_hook" #.(swig-lispify "term_hook" 'function)) :void
+(cffi:defcfun ("glp_term_hook" #.(swig-lispify "glp_term_hook" 'function)) :void
   (func :pointer)
   (info :pointer))
 
-(cl:export '#.(swig-lispify "term_hook" 'function))
+(cl:export '#.(swig-lispify "glp_term_hook" 'function))
 
-(cffi:defcfun ("glp_open_tee" #.(swig-lispify "open_tee" 'function)) :int
+(cffi:defcfun ("glp_open_tee" #.(swig-lispify "glp_open_tee" 'function)) :int
   (name :string))
 
-(cl:export '#.(swig-lispify "open_tee" 'function))
+(cl:export '#.(swig-lispify "glp_open_tee" 'function))
 
-(cffi:defcfun ("glp_close_tee" #.(swig-lispify "close_tee" 'function)) :int)
+(cffi:defcfun ("glp_close_tee" #.(swig-lispify "glp_close_tee" 'function)) :int)
 
-(cl:export '#.(swig-lispify "close_tee" 'function))
+(cl:export '#.(swig-lispify "glp_close_tee" 'function))
 
-(cffi:defctype #.(swig-lispify "errfunc" 'typename) :pointer)
+(cffi:defctype #.(swig-lispify "glp_errfunc" 'typename) :pointer)
 
-(cl:export '#.(swig-lispify "errfunc" 'typename))
+(cl:export '#.(swig-lispify "glp_errfunc" 'typename))
 
-(cffi:defcfun ("glp_error_" #.(swig-lispify "error_" 'function)) :pointer
+(cffi:defcfun ("glp_error_" #.(swig-lispify "glp_error_" 'function)) :pointer
   (file :string)
   (line :int))
 
-(cl:export '#.(swig-lispify "error_" 'function))
+(cl:export '#.(swig-lispify "glp_error_" 'function))
 
-(cffi:defcfun ("glp_assert_" #.(swig-lispify "assert_" 'function)) :void
+(cffi:defcfun ("glp_assert_" #.(swig-lispify "glp_assert_" 'function)) :void
   (expr :string)
   (file :string)
   (line :int))
 
-(cl:export '#.(swig-lispify "assert_" 'function))
+(cl:export '#.(swig-lispify "glp_assert_" 'function))
 
-(cffi:defcfun ("glp_error_hook" #.(swig-lispify "error_hook" 'function)) :void
+(cffi:defcfun ("glp_error_hook" #.(swig-lispify "glp_error_hook" 'function)) :void
   (func :pointer)
   (info :pointer))
 
-(cl:export '#.(swig-lispify "error_hook" 'function))
+(cl:export '#.(swig-lispify "glp_error_hook" 'function))
 
-(cffi:defcfun ("glp_alloc" #.(swig-lispify "alloc" 'function)) :pointer
+(cffi:defcfun ("glp_alloc" #.(swig-lispify "glp_alloc" 'function)) :pointer
   (n :int)
   (size :int))
 
-(cl:export '#.(swig-lispify "alloc" 'function))
+(cl:export '#.(swig-lispify "glp_alloc" 'function))
 
-(cffi:defcfun ("glp_realloc" #.(swig-lispify "realloc" 'function)) :pointer
+(cffi:defcfun ("glp_realloc" #.(swig-lispify "glp_realloc" 'function)) :pointer
   (ptr :pointer)
   (n :int)
   (size :int))
 
-(cl:export '#.(swig-lispify "realloc" 'function))
+(cl:export '#.(swig-lispify "glp_realloc" 'function))
 
-(cffi:defcfun ("glp_free" #.(swig-lispify "free" 'function)) :void
+(cffi:defcfun ("glp_free" #.(swig-lispify "glp_free" 'function)) :void
   (ptr :pointer))
 
-(cl:export '#.(swig-lispify "free" 'function))
+(cl:export '#.(swig-lispify "glp_free" 'function))
 
-(cffi:defcfun ("glp_mem_limit" #.(swig-lispify "mem_limit" 'function)) :void
+(cffi:defcfun ("glp_mem_limit" #.(swig-lispify "glp_mem_limit" 'function)) :void
   (limit :int))
 
-(cl:export '#.(swig-lispify "mem_limit" 'function))
+(cl:export '#.(swig-lispify "glp_mem_limit" 'function))
 
-(cffi:defcfun ("glp_mem_usage" #.(swig-lispify "mem_usage" 'function)) :void
+(cffi:defcfun ("glp_mem_usage" #.(swig-lispify "glp_mem_usage" 'function)) :void
   (count :pointer)
   (cpeak :pointer)
   (total :pointer)
   (tpeak :pointer))
 
-(cl:export '#.(swig-lispify "mem_usage" 'function))
+(cl:export '#.(swig-lispify "glp_mem_usage" 'function))
 
-(cffi:defctype #.(swig-lispify "graph" 'typename) :pointer)
+(cffi:defctype #.(swig-lispify "glp_graph" 'typename) :pointer)
 
-(cl:export '#.(swig-lispify "graph" 'typename))
+(cl:export '#.(swig-lispify "glp_graph" 'typename))
 
-(cffi:defctype #.(swig-lispify "vertex" 'typename) :pointer)
+(cffi:defctype #.(swig-lispify "glp_vertex" 'typename) :pointer)
 
-(cl:export '#.(swig-lispify "vertex" 'typename))
+(cl:export '#.(swig-lispify "glp_vertex" 'typename))
 
-(cffi:defctype #.(swig-lispify "arc" 'typename) :pointer)
+(cffi:defctype #.(swig-lispify "glp_arc" 'typename) :pointer)
 
-(cl:export '#.(swig-lispify "arc" 'typename))
+(cl:export '#.(swig-lispify "glp_arc" 'typename))
 
-(cffi:defcstruct #.(swig-lispify "graph" 'classname)
+(cffi:defcstruct #.(swig-lispify "glp_graph" 'classname)
 	(#.(swig-lispify "pool" 'slotname) :pointer)
 	(#.(swig-lispify "name" 'slotname) :string)
 	(#.(swig-lispify "nv_max" 'slotname) :int)
@@ -1710,7 +1710,7 @@
 	(#.(swig-lispify "v_size" 'slotname) :int)
 	(#.(swig-lispify "a_size" 'slotname) :int))
 
-(cl:export '#.(swig-lispify "graph" 'classname))
+(cl:export '#.(swig-lispify "glp_graph" 'classname))
 
 (cl:export '#.(swig-lispify "pool" 'slotname))
 
@@ -1730,7 +1730,7 @@
 
 (cl:export '#.(swig-lispify "a_size" 'slotname))
 
-(cffi:defcstruct #.(swig-lispify "vertex" 'classname)
+(cffi:defcstruct #.(swig-lispify "glp_vertex" 'classname)
 	(#.(swig-lispify "i" 'slotname) :int)
 	(#.(swig-lispify "name" 'slotname) :string)
 	(#.(swig-lispify "entry" 'slotname) :pointer)
@@ -1739,7 +1739,7 @@
 	(#.(swig-lispify "in" 'slotname) :pointer)
 	(#.(swig-lispify "out" 'slotname) :pointer))
 
-(cl:export '#.(swig-lispify "vertex" 'classname))
+(cl:export '#.(swig-lispify "glp_vertex" 'classname))
 
 (cl:export '#.(swig-lispify "i" 'slotname))
 
@@ -1755,7 +1755,7 @@
 
 (cl:export '#.(swig-lispify "out" 'slotname))
 
-(cffi:defcstruct #.(swig-lispify "arc" 'classname)
+(cffi:defcstruct #.(swig-lispify "glp_arc" 'classname)
 	(#.(swig-lispify "tail" 'slotname) :pointer)
 	(#.(swig-lispify "head" 'slotname) :pointer)
 	(#.(swig-lispify "data" 'slotname) :pointer)
@@ -1765,7 +1765,7 @@
 	(#.(swig-lispify "h_prev" 'slotname) :pointer)
 	(#.(swig-lispify "h_next" 'slotname) :pointer))
 
-(cl:export '#.(swig-lispify "arc" 'classname))
+(cl:export '#.(swig-lispify "glp_arc" 'classname))
 
 (cl:export '#.(swig-lispify "tail" 'slotname))
 
@@ -1783,92 +1783,92 @@
 
 (cl:export '#.(swig-lispify "h_next" 'slotname))
 
-(cffi:defcfun ("glp_create_graph" #.(swig-lispify "create_graph" 'function)) :pointer
+(cffi:defcfun ("glp_create_graph" #.(swig-lispify "glp_create_graph" 'function)) :pointer
   (v_size :int)
   (a_size :int))
 
-(cl:export '#.(swig-lispify "create_graph" 'function))
+(cl:export '#.(swig-lispify "glp_create_graph" 'function))
 
-(cffi:defcfun ("glp_set_graph_name" #.(swig-lispify "set_graph_name" 'function)) :void
+(cffi:defcfun ("glp_set_graph_name" #.(swig-lispify "glp_set_graph_name" 'function)) :void
   (G :pointer)
   (name :string))
 
-(cl:export '#.(swig-lispify "set_graph_name" 'function))
+(cl:export '#.(swig-lispify "glp_set_graph_name" 'function))
 
-(cffi:defcfun ("glp_add_vertices" #.(swig-lispify "add_vertices" 'function)) :int
+(cffi:defcfun ("glp_add_vertices" #.(swig-lispify "glp_add_vertices" 'function)) :int
   (G :pointer)
   (nadd :int))
 
-(cl:export '#.(swig-lispify "add_vertices" 'function))
+(cl:export '#.(swig-lispify "glp_add_vertices" 'function))
 
-(cffi:defcfun ("glp_set_vertex_name" #.(swig-lispify "set_vertex_name" 'function)) :void
+(cffi:defcfun ("glp_set_vertex_name" #.(swig-lispify "glp_set_vertex_name" 'function)) :void
   (G :pointer)
   (i :int)
   (name :string))
 
-(cl:export '#.(swig-lispify "set_vertex_name" 'function))
+(cl:export '#.(swig-lispify "glp_set_vertex_name" 'function))
 
-(cffi:defcfun ("glp_add_arc" #.(swig-lispify "add_arc" 'function)) :pointer
+(cffi:defcfun ("glp_add_arc" #.(swig-lispify "glp_add_arc" 'function)) :pointer
   (G :pointer)
   (i :int)
   (j :int))
 
-(cl:export '#.(swig-lispify "add_arc" 'function))
+(cl:export '#.(swig-lispify "glp_add_arc" 'function))
 
-(cffi:defcfun ("glp_del_vertices" #.(swig-lispify "del_vertices" 'function)) :void
+(cffi:defcfun ("glp_del_vertices" #.(swig-lispify "glp_del_vertices" 'function)) :void
   (G :pointer)
   (ndel :int)
   (num :pointer))
 
-(cl:export '#.(swig-lispify "del_vertices" 'function))
+(cl:export '#.(swig-lispify "glp_del_vertices" 'function))
 
-(cffi:defcfun ("glp_del_arc" #.(swig-lispify "del_arc" 'function)) :void
+(cffi:defcfun ("glp_del_arc" #.(swig-lispify "glp_del_arc" 'function)) :void
   (G :pointer)
   (a :pointer))
 
-(cl:export '#.(swig-lispify "del_arc" 'function))
+(cl:export '#.(swig-lispify "glp_del_arc" 'function))
 
-(cffi:defcfun ("glp_erase_graph" #.(swig-lispify "erase_graph" 'function)) :void
+(cffi:defcfun ("glp_erase_graph" #.(swig-lispify "glp_erase_graph" 'function)) :void
   (G :pointer)
   (v_size :int)
   (a_size :int))
 
-(cl:export '#.(swig-lispify "erase_graph" 'function))
+(cl:export '#.(swig-lispify "glp_erase_graph" 'function))
 
-(cffi:defcfun ("glp_delete_graph" #.(swig-lispify "delete_graph" 'function)) :void
+(cffi:defcfun ("glp_delete_graph" #.(swig-lispify "glp_delete_graph" 'function)) :void
   (G :pointer))
 
-(cl:export '#.(swig-lispify "delete_graph" 'function))
+(cl:export '#.(swig-lispify "glp_delete_graph" 'function))
 
-(cffi:defcfun ("glp_create_v_index" #.(swig-lispify "create_v_index" 'function)) :void
+(cffi:defcfun ("glp_create_v_index" #.(swig-lispify "glp_create_v_index" 'function)) :void
   (G :pointer))
 
-(cl:export '#.(swig-lispify "create_v_index" 'function))
+(cl:export '#.(swig-lispify "glp_create_v_index" 'function))
 
-(cffi:defcfun ("glp_find_vertex" #.(swig-lispify "find_vertex" 'function)) :int
+(cffi:defcfun ("glp_find_vertex" #.(swig-lispify "glp_find_vertex" 'function)) :int
   (G :pointer)
   (name :string))
 
-(cl:export '#.(swig-lispify "find_vertex" 'function))
+(cl:export '#.(swig-lispify "glp_find_vertex" 'function))
 
-(cffi:defcfun ("glp_delete_v_index" #.(swig-lispify "delete_v_index" 'function)) :void
+(cffi:defcfun ("glp_delete_v_index" #.(swig-lispify "glp_delete_v_index" 'function)) :void
   (G :pointer))
 
-(cl:export '#.(swig-lispify "delete_v_index" 'function))
+(cl:export '#.(swig-lispify "glp_delete_v_index" 'function))
 
-(cffi:defcfun ("glp_read_graph" #.(swig-lispify "read_graph" 'function)) :int
+(cffi:defcfun ("glp_read_graph" #.(swig-lispify "glp_read_graph" 'function)) :int
   (G :pointer)
   (fname :string))
 
-(cl:export '#.(swig-lispify "read_graph" 'function))
+(cl:export '#.(swig-lispify "glp_read_graph" 'function))
 
-(cffi:defcfun ("glp_write_graph" #.(swig-lispify "write_graph" 'function)) :int
+(cffi:defcfun ("glp_write_graph" #.(swig-lispify "glp_write_graph" 'function)) :int
   (G :pointer)
   (fname :string))
 
-(cl:export '#.(swig-lispify "write_graph" 'function))
+(cl:export '#.(swig-lispify "glp_write_graph" 'function))
 
-(cffi:defcfun ("glp_mincost_lp" #.(swig-lispify "mincost_lp" 'function)) :void
+(cffi:defcfun ("glp_mincost_lp" #.(swig-lispify "glp_mincost_lp" 'function)) :void
   (P :pointer)
   (G :pointer)
   (names :int)
@@ -1877,9 +1877,9 @@
   (a_cap :int)
   (a_cost :int))
 
-(cl:export '#.(swig-lispify "mincost_lp" 'function))
+(cl:export '#.(swig-lispify "glp_mincost_lp" 'function))
 
-(cffi:defcfun ("glp_mincost_okalg" #.(swig-lispify "mincost_okalg" 'function)) :int
+(cffi:defcfun ("glp_mincost_okalg" #.(swig-lispify "glp_mincost_okalg" 'function)) :int
   (G :pointer)
   (v_rhs :int)
   (a_low :int)
@@ -1889,9 +1889,9 @@
   (a_x :int)
   (v_pi :int))
 
-(cl:export '#.(swig-lispify "mincost_okalg" 'function))
+(cl:export '#.(swig-lispify "glp_mincost_okalg" 'function))
 
-(cffi:defcfun ("glp_mincost_relax4" #.(swig-lispify "mincost_relax4" 'function)) :int
+(cffi:defcfun ("glp_mincost_relax4" #.(swig-lispify "glp_mincost_relax4" 'function)) :int
   (G :pointer)
   (v_rhs :int)
   (a_low :int)
@@ -1902,9 +1902,9 @@
   (a_x :int)
   (a_rc :int))
 
-(cl:export '#.(swig-lispify "mincost_relax4" 'function))
+(cl:export '#.(swig-lispify "glp_mincost_relax4" 'function))
 
-(cffi:defcfun ("glp_maxflow_lp" #.(swig-lispify "maxflow_lp" 'function)) :void
+(cffi:defcfun ("glp_maxflow_lp" #.(swig-lispify "glp_maxflow_lp" 'function)) :void
   (P :pointer)
   (G :pointer)
   (names :int)
@@ -1912,9 +1912,9 @@
   (t_arg4 :int)
   (a_cap :int))
 
-(cl:export '#.(swig-lispify "maxflow_lp" 'function))
+(cl:export '#.(swig-lispify "glp_maxflow_lp" 'function))
 
-(cffi:defcfun ("glp_maxflow_ffalg" #.(swig-lispify "maxflow_ffalg" 'function)) :int
+(cffi:defcfun ("glp_maxflow_ffalg" #.(swig-lispify "glp_maxflow_ffalg" 'function)) :int
   (G :pointer)
   (s :int)
   (t_arg2 :int)
@@ -1923,27 +1923,27 @@
   (a_x :int)
   (v_cut :int))
 
-(cl:export '#.(swig-lispify "maxflow_ffalg" 'function))
+(cl:export '#.(swig-lispify "glp_maxflow_ffalg" 'function))
 
-(cffi:defcfun ("glp_check_asnprob" #.(swig-lispify "check_asnprob" 'function)) :int
+(cffi:defcfun ("glp_check_asnprob" #.(swig-lispify "glp_check_asnprob" 'function)) :int
   (G :pointer)
   (v_set :int))
 
-(cl:export '#.(swig-lispify "check_asnprob" 'function))
+(cl:export '#.(swig-lispify "glp_check_asnprob" 'function))
 
-(cl:defconstant #.(swig-lispify "ASN_MIN" 'constant) 1)
+(cl:defconstant #.(swig-lispify "GLP_ASN_MIN" 'constant) 1)
 
-(cl:export '#.(swig-lispify "ASN_MIN" 'constant))
+(cl:export '#.(swig-lispify "GLP_ASN_MIN" 'constant))
 
-(cl:defconstant #.(swig-lispify "ASN_MAX" 'constant) 2)
+(cl:defconstant #.(swig-lispify "GLP_ASN_MAX" 'constant) 2)
 
-(cl:export '#.(swig-lispify "ASN_MAX" 'constant))
+(cl:export '#.(swig-lispify "GLP_ASN_MAX" 'constant))
 
-(cl:defconstant #.(swig-lispify "ASN_MMP" 'constant) 3)
+(cl:defconstant #.(swig-lispify "GLP_ASN_MMP" 'constant) 3)
 
-(cl:export '#.(swig-lispify "ASN_MMP" 'constant))
+(cl:export '#.(swig-lispify "GLP_ASN_MMP" 'constant))
 
-(cffi:defcfun ("glp_asnprob_lp" #.(swig-lispify "asnprob_lp" 'function)) :int
+(cffi:defcfun ("glp_asnprob_lp" #.(swig-lispify "glp_asnprob_lp" 'function)) :int
   (P :pointer)
   (form :int)
   (G :pointer)
@@ -1951,9 +1951,9 @@
   (v_set :int)
   (a_cost :int))
 
-(cl:export '#.(swig-lispify "asnprob_lp" 'function))
+(cl:export '#.(swig-lispify "glp_asnprob_lp" 'function))
 
-(cffi:defcfun ("glp_asnprob_okalg" #.(swig-lispify "asnprob_okalg" 'function)) :int
+(cffi:defcfun ("glp_asnprob_okalg" #.(swig-lispify "glp_asnprob_okalg" 'function)) :int
   (form :int)
   (G :pointer)
   (v_set :int)
@@ -1961,24 +1961,24 @@
   (sol :pointer)
   (a_x :int))
 
-(cl:export '#.(swig-lispify "asnprob_okalg" 'function))
+(cl:export '#.(swig-lispify "glp_asnprob_okalg" 'function))
 
-(cffi:defcfun ("glp_asnprob_hall" #.(swig-lispify "asnprob_hall" 'function)) :int
+(cffi:defcfun ("glp_asnprob_hall" #.(swig-lispify "glp_asnprob_hall" 'function)) :int
   (G :pointer)
   (v_set :int)
   (a_x :int))
 
-(cl:export '#.(swig-lispify "asnprob_hall" 'function))
+(cl:export '#.(swig-lispify "glp_asnprob_hall" 'function))
 
-(cffi:defcfun ("glp_cpp" #.(swig-lispify "cpp" 'function)) :double
+(cffi:defcfun ("glp_cpp" #.(swig-lispify "glp_cpp" 'function)) :double
   (G :pointer)
   (v_t :int)
   (v_es :int)
   (v_ls :int))
 
-(cl:export '#.(swig-lispify "cpp" 'function))
+(cl:export '#.(swig-lispify "glp_cpp" 'function))
 
-(cffi:defcfun ("glp_read_mincost" #.(swig-lispify "read_mincost" 'function)) :int
+(cffi:defcfun ("glp_read_mincost" #.(swig-lispify "glp_read_mincost" 'function)) :int
   (G :pointer)
   (v_rhs :int)
   (a_low :int)
@@ -1986,9 +1986,9 @@
   (a_cost :int)
   (fname :string))
 
-(cl:export '#.(swig-lispify "read_mincost" 'function))
+(cl:export '#.(swig-lispify "glp_read_mincost" 'function))
 
-(cffi:defcfun ("glp_write_mincost" #.(swig-lispify "write_mincost" 'function)) :int
+(cffi:defcfun ("glp_write_mincost" #.(swig-lispify "glp_write_mincost" 'function)) :int
   (G :pointer)
   (v_rhs :int)
   (a_low :int)
@@ -1996,113 +1996,113 @@
   (a_cost :int)
   (fname :string))
 
-(cl:export '#.(swig-lispify "write_mincost" 'function))
+(cl:export '#.(swig-lispify "glp_write_mincost" 'function))
 
-(cffi:defcfun ("glp_read_maxflow" #.(swig-lispify "read_maxflow" 'function)) :int
+(cffi:defcfun ("glp_read_maxflow" #.(swig-lispify "glp_read_maxflow" 'function)) :int
   (G :pointer)
   (s :pointer)
   (t_arg2 :pointer)
   (a_cap :int)
   (fname :string))
 
-(cl:export '#.(swig-lispify "read_maxflow" 'function))
+(cl:export '#.(swig-lispify "glp_read_maxflow" 'function))
 
-(cffi:defcfun ("glp_write_maxflow" #.(swig-lispify "write_maxflow" 'function)) :int
+(cffi:defcfun ("glp_write_maxflow" #.(swig-lispify "glp_write_maxflow" 'function)) :int
   (G :pointer)
   (s :int)
   (t_arg2 :int)
   (a_cap :int)
   (fname :string))
 
-(cl:export '#.(swig-lispify "write_maxflow" 'function))
+(cl:export '#.(swig-lispify "glp_write_maxflow" 'function))
 
-(cffi:defcfun ("glp_read_asnprob" #.(swig-lispify "read_asnprob" 'function)) :int
+(cffi:defcfun ("glp_read_asnprob" #.(swig-lispify "glp_read_asnprob" 'function)) :int
   (G :pointer)
   (v_set :int)
   (a_cost :int)
   (fname :string))
 
-(cl:export '#.(swig-lispify "read_asnprob" 'function))
+(cl:export '#.(swig-lispify "glp_read_asnprob" 'function))
 
-(cffi:defcfun ("glp_write_asnprob" #.(swig-lispify "write_asnprob" 'function)) :int
+(cffi:defcfun ("glp_write_asnprob" #.(swig-lispify "glp_write_asnprob" 'function)) :int
   (G :pointer)
   (v_set :int)
   (a_cost :int)
   (fname :string))
 
-(cl:export '#.(swig-lispify "write_asnprob" 'function))
+(cl:export '#.(swig-lispify "glp_write_asnprob" 'function))
 
-(cffi:defcfun ("glp_read_ccdata" #.(swig-lispify "read_ccdata" 'function)) :int
+(cffi:defcfun ("glp_read_ccdata" #.(swig-lispify "glp_read_ccdata" 'function)) :int
   (G :pointer)
   (v_wgt :int)
   (fname :string))
 
-(cl:export '#.(swig-lispify "read_ccdata" 'function))
+(cl:export '#.(swig-lispify "glp_read_ccdata" 'function))
 
-(cffi:defcfun ("glp_write_ccdata" #.(swig-lispify "write_ccdata" 'function)) :int
+(cffi:defcfun ("glp_write_ccdata" #.(swig-lispify "glp_write_ccdata" 'function)) :int
   (G :pointer)
   (v_wgt :int)
   (fname :string))
 
-(cl:export '#.(swig-lispify "write_ccdata" 'function))
+(cl:export '#.(swig-lispify "glp_write_ccdata" 'function))
 
-(cffi:defcfun ("glp_netgen" #.(swig-lispify "netgen" 'function)) :int
+(cffi:defcfun ("glp_netgen" #.(swig-lispify "glp_netgen" 'function)) :int
   (G :pointer)
   (v_rhs :int)
   (a_cap :int)
   (a_cost :int)
   (parm :pointer))
 
-(cl:export '#.(swig-lispify "netgen" 'function))
+(cl:export '#.(swig-lispify "glp_netgen" 'function))
 
-(cffi:defcfun ("glp_netgen_prob" #.(swig-lispify "netgen_prob" 'function)) :void
+(cffi:defcfun ("glp_netgen_prob" #.(swig-lispify "glp_netgen_prob" 'function)) :void
   (nprob :int)
   (parm :pointer))
 
-(cl:export '#.(swig-lispify "netgen_prob" 'function))
+(cl:export '#.(swig-lispify "glp_netgen_prob" 'function))
 
-(cffi:defcfun ("glp_gridgen" #.(swig-lispify "gridgen" 'function)) :int
+(cffi:defcfun ("glp_gridgen" #.(swig-lispify "glp_gridgen" 'function)) :int
   (G :pointer)
   (v_rhs :int)
   (a_cap :int)
   (a_cost :int)
   (parm :pointer))
 
-(cl:export '#.(swig-lispify "gridgen" 'function))
+(cl:export '#.(swig-lispify "glp_gridgen" 'function))
 
-(cffi:defcfun ("glp_rmfgen" #.(swig-lispify "rmfgen" 'function)) :int
+(cffi:defcfun ("glp_rmfgen" #.(swig-lispify "glp_rmfgen" 'function)) :int
   (G :pointer)
   (s :pointer)
   (t_arg2 :pointer)
   (a_cap :int)
   (parm :pointer))
 
-(cl:export '#.(swig-lispify "rmfgen" 'function))
+(cl:export '#.(swig-lispify "glp_rmfgen" 'function))
 
-(cffi:defcfun ("glp_weak_comp" #.(swig-lispify "weak_comp" 'function)) :int
+(cffi:defcfun ("glp_weak_comp" #.(swig-lispify "glp_weak_comp" 'function)) :int
   (G :pointer)
   (v_num :int))
 
-(cl:export '#.(swig-lispify "weak_comp" 'function))
+(cl:export '#.(swig-lispify "glp_weak_comp" 'function))
 
-(cffi:defcfun ("glp_strong_comp" #.(swig-lispify "strong_comp" 'function)) :int
+(cffi:defcfun ("glp_strong_comp" #.(swig-lispify "glp_strong_comp" 'function)) :int
   (G :pointer)
   (v_num :int))
 
-(cl:export '#.(swig-lispify "strong_comp" 'function))
+(cl:export '#.(swig-lispify "glp_strong_comp" 'function))
 
-(cffi:defcfun ("glp_top_sort" #.(swig-lispify "top_sort" 'function)) :int
+(cffi:defcfun ("glp_top_sort" #.(swig-lispify "glp_top_sort" 'function)) :int
   (G :pointer)
   (v_num :int))
 
-(cl:export '#.(swig-lispify "top_sort" 'function))
+(cl:export '#.(swig-lispify "glp_top_sort" 'function))
 
-(cffi:defcfun ("glp_wclique_exact" #.(swig-lispify "wclique_exact" 'function)) :int
+(cffi:defcfun ("glp_wclique_exact" #.(swig-lispify "glp_wclique_exact" 'function)) :int
   (G :pointer)
   (v_wgt :int)
   (sol :pointer)
   (v_set :int))
 
-(cl:export '#.(swig-lispify "wclique_exact" 'function))
+(cl:export '#.(swig-lispify "glp_wclique_exact" 'function))
 
 
