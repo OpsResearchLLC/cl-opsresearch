@@ -21,11 +21,15 @@
 (defpackage #:or-glpk
   (:use #:cl)
   (:export 
-  	#:test-glpk
   	#:gl_prob
   	#:release
   	#:name-of
-  	#:with-problem))
+  	#:with-problem
+  	#:write-cplex-lp
+  	#:read-cplex-lp
+  	#:write-mps
+  	#:read-mps
+  	))
 
 (defpackage #:glp
   (:use #:cl))

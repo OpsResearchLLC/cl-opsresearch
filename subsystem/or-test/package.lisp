@@ -1,4 +1,4 @@
-;;;; or-gsl.asd
+;;;; package.lisp
 
 ;;;; ;;;;; BEGIN LICENSE BLOCK ;;;;;
 ;;;; 
@@ -13,19 +13,16 @@
 ;;;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ;;;; GNU Lesser General Public License for more details.
 ;;;; 
-;;;; You should have received a copy of the GNU General Public License
+;;;; You should have received a copy of the GNU Lesser General Public License
 ;;;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ;;;; 
 ;;;; ;;;;; END LICENSE BLOCK ;;;;;
 
-(asdf:defsystem #:or-gsl
-  :description "Subsystem - GNU Scientific Library"
-  :author "Donald Anderson <dranderson@OpsResearch.com>"
-  :license "GPL3" 
-  :depends-on (#:cl-opsresearch #:cffi)
-  :serial t
-  :components ((:file "package")
-               (:file "or-gsl")
-               (:file "swig/gsl")
-               ))
+(defpackage #:or-test
+  (:use #:cl)
+  (:export 
+  	#:test-all
+  	#:test-gsl
+  	#:test-glpk
+  	))
 

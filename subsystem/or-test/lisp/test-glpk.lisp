@@ -18,10 +18,22 @@
 ;;;; 
 ;;;; ;;;;; END LICENSE BLOCK ;;;;;
 
-(in-package #:or-gsl)
+(in-package #:or-test)
 
-(defun test-gsl ()
-  (5am:explain! (5am:run 'test-gsl)))
+(defun test-glpk ()
+  (5am:explain! (5am:run 'test-glpk)))
 
-(5am:test test-gsl
-      (5am:is ( equal T T)))
+(5am:test test-glpk
+	(or-glpk:with-problem (problem :name "test-name" )
+      	(5am:is (equal (or-glpk:name-of problem) "test-name"))
+
+		(or-glpk:read-mps problem (merge-pathnames
+			(make-pathname :directory '(:relative "data") :name "test-1" :type "mps")
+			(asdf:system-source-directory :or-glpk)
+			))
+		
+		(5am:is (equal (or-glpk:name-of problem) "TESTPROB"))		
+		(or-glpk:write-cplex-lp problem #p"/tmp/cplex.lp")
+
+		(or-glpk:with-problem (cplex-problem)
+			(read-cplex-lp cplex-problem #p"/tmp/cplex.lp"))))
