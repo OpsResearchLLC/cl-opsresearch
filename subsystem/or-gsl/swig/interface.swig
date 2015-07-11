@@ -3,6 +3,8 @@
 
 %feature("export");
 
+%feature("intern_function","1");
+
 %include "/usr/local/include/gsl/gsl_errno.h"
 %include "/usr/local/include/gsl/gsl_types.h"
 %include "/usr/local/include/gsl/gsl_inline.h"
