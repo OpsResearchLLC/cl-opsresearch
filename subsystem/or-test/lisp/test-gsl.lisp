@@ -24,4 +24,5 @@
   (5am:explain! (5am:run 'test-gsl)))
 
 (5am:test test-gsl
-      (5am:is ( equal T T)))
+      (5am:is ( equal (gsl:gsl-sf-bessel-j-0 0.5d0)   0.958851077208406d0 ))
+      (5am:is ( equal (gsl:gsl-sf-bessel-jj-0 0.5d0)  0.9384698072408129d0 )))
