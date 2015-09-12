@@ -22,5 +22,6 @@
 
 (defun test-all()
 	"Run unit tests for cl-opsresearch and subsystems."
+	(test-opsresearch)
 	(test-glpk)
 	(test-gsl))

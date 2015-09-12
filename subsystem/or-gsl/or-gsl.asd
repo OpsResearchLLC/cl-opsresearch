@@ -25,7 +25,7 @@
   :depends-on (#:cl-opsresearch #:cffi)
   :serial t
   :components ((:file "package")
-               (:file "or-gsl")
-               (:file "swig/gsl")
-               ))
+               (:module swig
+               		:components ((:file "gsl")))
+               (:file "or-gsl")))
 

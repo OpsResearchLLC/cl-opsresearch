@@ -25,8 +25,9 @@
   :depends-on (#:cl-opsresearch #:cffi)
   :serial t
   :components ((:file "package")
-               (:file "swig/glpk")
+               (:module swig
+                :serial t 
+                :components ((:file "glpk")))
                (:file "or-glpk")
-               (:file "problem")
-               ))
+               (:file "problem")))
 

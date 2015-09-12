@@ -22,6 +22,7 @@
   (:use #:cl)
   (:export 
   	#:test-all
+  	#:test-opsresearch
   	#:test-gsl
   	#:test-glpk
   	))

@@ -19,7 +19,7 @@
 ;;;; ;;;;; END LICENSE BLOCK ;;;;;
 
 (asdf:defsystem #:or-test
-  :description "Tesys for the system cl-opsresearch"
+  :description "Tests for the system cl-opsresearch"
   :author "Donald Anderson <dranderson@opsresearch.com>"
   :license "GPL3"
   :depends-on(
@@ -30,8 +30,11 @@
   :serial t
   :components (
 	(:file "package")
-	(:file "lisp/test-gsl")
-	(:file "lisp/test-glpk")
-	(:file "lisp/test")
+	(:module tests
+  		:serial t
+		:components ((:file "test-opsresearch")
+					(:file "test-gsl")
+					(:file "test-glpk")
+					(:file "test")))
 	(:file "or-test")))
 
