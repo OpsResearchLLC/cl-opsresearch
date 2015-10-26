@@ -1,4 +1,4 @@
 # cl-opsresearch
-Common Lisp library for Operations Research
+Common Lisp system for Operations Research
 
 Tested with SBCL and ABCL.
