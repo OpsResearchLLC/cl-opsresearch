@@ -25,5 +25,8 @@
   :depends-on (#:cl-opsresearch #:cffi)
   :serial t
   :components ((:file "package")
+                (:module swig
+                  :serial t   
+                  :components ((:file "fann"))) 
                (:file "or-fann")))
 
