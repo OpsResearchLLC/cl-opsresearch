@@ -20,9 +20,8 @@
 
 (in-package #:or-test)
 
-(defun test-all()
-	"Run unit tests for cl-opsresearch and subsystems."
-	(test-opsresearch)
-	(test-glpk)
-	(test-gsl)
-  (test-fann))
+(defun test-fann ()
+  (5am:explain! (5am:run 'test-fann)))
+
+(5am:test test-fann
+      (5am:is ( equal T T)))

@@ -20,5 +20,4 @@
 
 (in-package #:or-test)
 
-;;; "or-test" goes here. Hacks and glory await!
 

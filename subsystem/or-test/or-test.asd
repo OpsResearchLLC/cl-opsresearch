@@ -26,7 +26,8 @@
 	#:fiveam
 	#:cl-opsresearch
 	#:or-glpk
-	#:or-gsl)
+	#:or-gsl
+  #:or-fann)
   :serial t
   :components (
 	(:file "package")
@@ -34,7 +35,8 @@
   		:serial t
 		:components ((:file "test-opsresearch")
 					(:file "test-gsl")
-					(:file "test-glpk")
+          (:file "test-glpk")
+          (:file "test-fann")
 					(:file "test")))
 	(:file "or-test")))
 
