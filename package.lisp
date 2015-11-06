@@ -26,6 +26,12 @@
     #:name-of
   	))
 
+(defpackage #:or-cffi
+  (:use #:cl)
+  (:export
+    #:with-foreign-alloc
+    ))
+
 (defpackage #:or-milp
   (:use #:cl)
   (:export

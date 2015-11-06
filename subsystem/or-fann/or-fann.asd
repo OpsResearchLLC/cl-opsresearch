@@ -27,6 +27,7 @@
   :components ((:file "package")
                 (:module swig
                   :serial t   
-                  :components ((:file "fann"))) 
+                  :components ((:file "fann")))
+               (:file "network")
                (:file "or-fann")))
 

@@ -22,11 +22,14 @@
   :description "Common Lisp library for Operations Research."
   :author "Donald Anderson <dranderson@OpsResearch.com>"
   :license "GPL3"
+  :depends-on (#:cffi)
   :serial t
   :components ((:file "package")
                (:file "cl-opsresearch")
                (:module lisp
                 :serial t
-               	:components ((:file "problem")
-               				(:file "milp")))))
+               	:components 
+                  ((:file "foreign")
+                  (:file "problem")
+               		(:file "milp")))))
 

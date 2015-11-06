@@ -1,4 +1,4 @@
-;;;; package.lisp
+;;;; fireign.lisp
 
 ;;;; ;;;;; BEGIN LICENSE BLOCK ;;;;;
 ;;;; 
@@ -18,18 +18,14 @@
 ;;;; 
 ;;;; ;;;;; END LICENSE BLOCK ;;;;;
 
-(defpackage #:or-glpk
-  (:use #:cl)
-  (:export 
-  	#:gl-prob
-  	#:name
-  	#:with-problem
-  	#:write-cplex-lp
-  	#:read-cplex-lp
-  	#:write-mps
-  	#:read-mps
-  	))
+(in-package #:or-cffi)
 
-(defpackage #:glp
-  (:use #:cl))
-
+(defmacro with-foreign-alloc ((var type &rest rest) &body body)                  
+  (let ((obj (gensym)))
+    `(let (,var ,obj)
+       (unwind-protect
+         (progn (setq ,obj (cffi:foreign-alloc ,type ,@rest )
+                      ,var ,obj)
+                ,@body)
+         (unless (null ,obj)
+           (cffi:foreign-free ,obj))))))

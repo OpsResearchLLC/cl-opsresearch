@@ -21,7 +21,13 @@
 (defpackage #:or-fann
   (:use #:cl)
   (:export
-     #:start))
+     #:start
+     #:fann-net
+     #:name
+     #:run
+     #:randomize-weights
+     #:with-network
+     ))
 
 (defpackage #:fann
   (:use #:cl))

@@ -29,7 +29,7 @@
 (defmethod release ((problem Problem))
 	(glp:glp-delete-prob (glp-prob problem)))
 
-(defmethod name-of ((problem Problem))
+(defmethod name ((problem Problem))
   (glp:glp-get-prob-name (glp-prob problem)))
 
 (defmethod read-mps ((problem Problem) path &key format)
