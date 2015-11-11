@@ -28,18 +28,21 @@
             (net :name "Standard" :layers '(5 4 5))
             (or-fann:randomize-weights net 1.0D0 1.1D0)
             (or-fann:run net '(1.1D0 2.2D0 3.3D0 4.4D0 5.5D0))
-            (5am:is (equal (or-fann:name net) "Standard")))  
+            (5am:is (equal (or-fann:name net) "Standard"))
+            (5am:is (equal (or-fann:get-network-type net) :FANN-NETTYPE-LAYER))) 
           
           (or-fann:with-network 
             (net :name "Sparse" :net-type :SPARSE :connection-rate 0.5 :layers '(5 4 5))
             (or-fann:randomize-weights net 1.0D0 1.1D0)
             (or-fann:run net '(1.1D0 2.2D0 3.3D0 4.4D0 5.5D0))
-            (5am:is (equal (or-fann:name net) "Sparse"))) 
+            (5am:is (equal (or-fann:name net) "Sparse"))
+            (5am:is (equal (or-fann:get-network-type net) :FANN-NETTYPE-LAYER))) 
           
           (or-fann:with-network 
             (net :name "Shortcut" :net-type :SHORTCUT :layers '(5 4 5))
             (or-fann:randomize-weights net 1.0D0 1.1D0)
             (or-fann:run net '(1.1D0 2.2D0 3.3D0 4.4D0 5.5D0))
-            (5am:is (equal (or-fann:name net) "Shortcut"))))   
+            (5am:is (equal (or-fann:name net) "Shortcut"))
+            (5am:is (equal (or-fann:get-network-type net) :FANN-NETTYPE-SHORTCUT)))) 
 
 

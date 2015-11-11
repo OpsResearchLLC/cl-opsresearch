@@ -27,6 +27,16 @@
      #:run
      #:randomize-weights
      #:with-network
+     #:print-parameters
+     #:get-num-input
+     #:get-num-output
+     #:get-total-neurons
+     #:get-total-connections
+     #:get-connection-rate
+     #:get-num-layers
+     #:get-network-type
+     #:get-layer-array
+     #:get-bias-array
      ))
 
 (defpackage #:fann

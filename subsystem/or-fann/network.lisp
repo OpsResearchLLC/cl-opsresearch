@@ -20,6 +20,8 @@
 
 (in-package #:or-fann)
 
+(cffi:defcenum fann_nettype_enum :FANN-NETTYPE-LAYER :FANN-NETTYPE-SHORTCUT)
+
 ;; COMMON BASE
 (defclass Network (cl-opsresearch:Problem)
   ((name :reader name)

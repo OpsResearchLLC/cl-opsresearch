@@ -29,5 +29,6 @@
                   :serial t   
                   :components ((:file "fann")))
                (:file "network")
+               (:file "parameters")
                (:file "or-fann")))
 
