@@ -21,7 +21,7 @@
 (defpackage #:or-glpk
   (:use #:cl)
   (:export 
-  	#:gl-prob
+  	#:glp-prob
   	#:name
   	#:with-problem
   	#:write-cplex-lp
